@@ -8,8 +8,21 @@
 import Foundation
 
 enum RoleType: String {
-    case batsman = "Batsman"
-    case allRounder = "All rounder"
-    case bowler = "Bowler"
-    case wicketKeeperBatsman = "Wicket keeper"
+    case batsman = "🏏"
+    case allRounder = "🏏🎾"
+    case bowler = "🎾"
+    case wicketKeeperBatsman = "🧤🏏"
+    
+    func getText() -> String {
+        switch self {
+        case .batsman:
+            return "Batsman"
+        case .allRounder:
+            return "All rounder"
+        case .bowler:
+            return "Bowler"
+        case .wicketKeeperBatsman:
+            return "Wicket Keeper Batsman"
+        }
+    }
 }

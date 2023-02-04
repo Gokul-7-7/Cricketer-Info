@@ -21,7 +21,7 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad()
         setupTeamData()
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        registerCustomCell()
+        registerCustomTableViewCell()
         setupView()
     }
     
@@ -32,6 +32,10 @@ class MainPageViewController: UIViewController {
         seupKolkataKnightRidersData()
         seupLucknowSuperGiantsData()
         seupMumbaiIndiansData()
+        seupPunjabKingsData()
+        seupRajasthanRoyalsData()
+        seupRoyalChallengersBangaloreData()
+        setupSunrisersHyderabadData()
         selectedTeam = teamNames[0]
     }
     
@@ -66,12 +70,14 @@ extension MainPageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
         self.playerTableView.backgroundColor = teamNames[row].getColor()
         self.playerTableView.reloadData()
+        let indexPath = IndexPath(row: 0, section: 0)
+        self.playerTableView.scrollToRow(at: indexPath, at: .top, animated: false)
     }
 }
 
 extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func registerCustomCell() {
+    func registerCustomTableViewCell() {
         playerTableView.register(UINib.init(nibName: "PlayerInformationTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "PlayerInformationTableViewCell")
     }
     
@@ -87,7 +93,7 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerInformationTableViewCell", for: indexPath) as? PlayerInformationTableViewCell else { return UITableViewCell() }
         filteredTeam?.removeAll()
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        if let filteredTeam = filteredTeam {
+        if let filteredTeam = filteredTeam, let team = filteredTeam[0].team, team != .sunrisersHyderabad {
             var isCaptain = false
             if indexPath.row == 0 {
                 isCaptain = true
