@@ -48,37 +48,25 @@ enum TeamName: String, CaseIterable {
     func getTeamName() -> String {
         switch self {
         case .gujaratTitans:
-                return "Gujrat Titans"
+            return "Gujrat Titans"
         case .mumbaiIndians:
-                return "Mumbai Indians"
+            return "Mumbai Indians"
         case .punjabKings:
-                return "Punjab Kings"
+            return "Punjab Kings"
         case .delhiCapitals:
-                return "Delhi Capitals"
+            return "Delhi Capitals"
         case .rajasthanRoyal:
-                return "Rajasthan Royals"
+            return "Rajasthan Royals"
         case .royalChallengersBangalore:
-                return "Rajasthan Royals"
+            return "Rajasthan Royals"
         case .sunrisersHyderabad:
-                return "Sunrisers Hyderabad"
+            return "Sunrisers Hyderabad"
         case .chennaiSuperKings:
-                return "Chennai Super Kings"
+            return "Chennai Super Kings"
         case .lucknowSupergiants:
-                return "Lucknow Supergiants"
+            return "Lucknow Supergiants"
         case .kolkataKnightRiders:
-                return "Kolkata Knight Riders"
+            return "Kolkata Knight Riders"
         }
-        return "-"
     }
 }
-//"Gujarat Titans"
-//"Mumbai Indians"//    Gujarat Titans
-//"Punjab Kings"//    Mumbai Indians
-//"Delhi Capitals"//     Punjab Kings
-//"Rajasthan Royal"//    Delhi Capitals
-//    Rajasthan Royal
-//    Royal Challengers Bangalore
-//    Sunrisers Hyderabad
-//    Chennai Super Kings
-//    Lucknow Supergiants
-//    Kolkata Knight Riders

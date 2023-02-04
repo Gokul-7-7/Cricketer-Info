@@ -14,6 +14,8 @@ class PlayerInformationTableViewCell: UITableViewCell {
     @IBOutlet var roleLabel: UILabel!
     @IBOutlet var parentStackView: UIStackView!
     @IBOutlet var containerView: UIView!
+    @IBOutlet var captainLabel: UILabel!
+    let activityIndicator = UIActivityIndicatorView()
         
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,7 +36,12 @@ class PlayerInformationTableViewCell: UITableViewCell {
         containerView.layer.cornerRadius = 5
     }
     
-    func setupViewWith(data: PlayerInfoModel) {
+    func setupViewWith(data: PlayerInfoModel, isCaptain: Bool) {
+        if isCaptain {
+            captainLabel.isHidden = false
+        } else {
+            captainLabel.isHidden = true
+        }
         if let imageURL = URL(string: data.image  ?? "") {
             self.playerImageView.load(url: imageURL)
         } else {
