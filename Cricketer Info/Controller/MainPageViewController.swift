@@ -17,13 +17,10 @@ class MainPageViewController: UIViewController {
     private var selectedTeam: TeamName?
     private var filteredTeam: [PlayerInfoModel]?
     
-    override func viewWillAppear(_ animated: Bool) {
-        setupTeamData()
-        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTeamData()
+        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
         registerCustomCell()
         setupView()
     }
@@ -64,6 +61,7 @@ extension MainPageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(row, component)
+        filteredTeam?.removeAll()
         selectedTeam = teamNames[row]
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
         self.playerTableView.backgroundColor = teamNames[row].getColor()
@@ -87,6 +85,7 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerInformationTableViewCell", for: indexPath) as? PlayerInformationTableViewCell else { return UITableViewCell() }
+        filteredTeam?.removeAll()
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
         if let filteredTeam = filteredTeam {
             var isCaptain = false
@@ -100,5 +99,15 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
         cell.backgroundColor = bgColor
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PlayerDetailViewController") as? PlayerDetailViewController {
+            detailVC.playerData = filteredTeam?[indexPath.row]
+            if indexPath.row == 0 {
+                detailVC.isCaptain = true
+            }
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
     }
 }

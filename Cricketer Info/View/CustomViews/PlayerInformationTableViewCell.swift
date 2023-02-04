@@ -15,7 +15,6 @@ class PlayerInformationTableViewCell: UITableViewCell {
     @IBOutlet var parentStackView: UIStackView!
     @IBOutlet var containerView: UIView!
     @IBOutlet var captainLabel: UILabel!
-    let activityIndicator = UIActivityIndicatorView()
         
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,8 +24,6 @@ class PlayerInformationTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func configureView() {
