@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303EF298643A400CECF18 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EE298643A400CECF18 /* MainPageViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +75,8 @@
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
 				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
 				55F30404298644FD00CECF18 /* Model */,
-				55F303FF2986440B00CECF18 /* View */,
 				55F303FE298643FF00CECF18 /* Controller */,
+				55F303FF2986440B00CECF18 /* View */,
 				55F303F3298643A500CECF18 /* Assets.xcassets */,
 				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 				55F303F8298643A500CECF18 /* Info.plist */,
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				55F3040929864BD200CECF18 /* RoleType.swift */,
+				55652E66298AA55800532EA9 /* TeamName.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F303EF298643A400CECF18 /* MainPageViewController.swift in Sources */,
+				55652E67298AA55800532EA9 /* TeamName.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55F30403298644F800CECF18 /* TeamInfoModel.swift in Sources */,
 				55F3040829864B1F00CECF18 /* CricketerInfoModel.swift in Sources */,

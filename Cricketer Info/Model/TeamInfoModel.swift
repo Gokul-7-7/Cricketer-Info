@@ -10,14 +10,12 @@ import UIKit
 
 struct TeamInfoModel {
     var id: Int?
-    var name: String?
-    var color: UIColor?
+    var name: TeamName?
     var playerInfo: [PlayerInfoModel]?
     
-    init(id: Int? = nil, name: String? = nil, color: UIColor? = nil, playerInfo: [PlayerInfoModel]? = nil) {
+    init(id: Int? = nil, name: TeamName? = nil, playerInfo: [PlayerInfoModel]?) {
         self.id = id
         self.name = name
-        self.color = color
         self.playerInfo = playerInfo
     }
 }

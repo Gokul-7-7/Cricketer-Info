@@ -8,9 +8,9 @@
 import Foundation
 
 struct PlayerInfoModel {
-    var id: Int?
     var name: String?
     var role: RoleType?
     var image: String?
     var description: String?
+    var team: TeamName?
 }

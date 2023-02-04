@@ -8,7 +8,8 @@
 import Foundation
 
 enum RoleType: String {
-    case batsman
-    case allRounder
-    case bowler
+    case batsman = "Batsman"
+    case allRounder = "All rounder"
+    case bowler = "Bowler"
+    case wicketKeeperBatsman = "Wicket keeper"
 }
