@@ -93,10 +93,12 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerInformationTableViewCell", for: indexPath) as? PlayerInformationTableViewCell else { return UITableViewCell() }
         filteredTeam?.removeAll()
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        if let filteredTeam = filteredTeam, let team = filteredTeam[0].team, team != .sunrisersHyderabad {
+        if let filteredTeam = filteredTeam {
             var isCaptain = false
-            if indexPath.row == 0 {
+            if indexPath.row == 0, let team = filteredTeam[0].team, team != .sunrisersHyderabad {
                 isCaptain = true
+            } else {
+                isCaptain = false
             }
             cell.setupViewWith(data: filteredTeam[indexPath.row], isCaptain: isCaptain)
         }
@@ -110,7 +112,7 @@ extension MainPageViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PlayerDetailViewController") as? PlayerDetailViewController {
             detailVC.playerData = filteredTeam?[indexPath.row]
-            if indexPath.row == 0 {
+            if indexPath.row == 0, let team = filteredTeam?[0].team, team != .sunrisersHyderabad{
                 detailVC.isCaptain = true
             }
             self.navigationController?.pushViewController(detailVC, animated: true)
