@@ -26,6 +26,12 @@ class PlayerInformationTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    override func prepareForReuse() {
+        playerImageView.image = nil
+        nameLabel.text = nil
+        roleLabel.text = nil
+        captainLabel.text = nil
+    }
     func configureView() {
         playerImageView.clipsToBounds = true
         playerImageView.layer.cornerRadius = 5

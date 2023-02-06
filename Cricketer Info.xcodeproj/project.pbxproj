@@ -10,34 +10,32 @@
 		5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548686D298EF3C2009F03F5 /* AllPlayerData.swift */; };
 		55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */; };
 		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
+		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303EF298643A400CECF18 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EE298643A400CECF18 /* MainPageViewController.swift */; };
-		55F303F2298643A400CECF18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F0298643A400CECF18 /* Main.storyboard */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
 		55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F5298643A500CECF18 /* LaunchScreen.storyboard */; };
 		55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F30400298644EC00CECF18 /* PlayerInfoModel.swift */; };
 		55F3040A29864BD200CECF18 /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040929864BD200CECF18 /* RoleType.swift */; };
 		55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */; };
-		55F3041029864C9600CECF18 /* PlayerInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F3040E29864C9600CECF18 /* PlayerInformationTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5548686D298EF3C2009F03F5 /* AllPlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayerData.swift; sourceTree = "<group>"; };
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
+		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55F303EE298643A400CECF18 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		55F303F1298643A400CECF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F303F3298643A500CECF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F303F6298643A500CECF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F303F8298643A500CECF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F30400298644EC00CECF18 /* PlayerInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoModel.swift; sourceTree = "<group>"; };
 		55F3040929864BD200CECF18 /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
 		55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableViewCell.swift; sourceTree = "<group>"; };
-		55F3040E29864C9600CECF18 /* PlayerInformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerInformationTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +94,7 @@
 				55F3040B29864BD700CECF18 /* Constants */,
 				55F303EE298643A400CECF18 /* MainPageViewController.swift */,
 				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
+				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				55F3040C29864C5C00CECF18 /* CustomViews */,
-				55F303F0298643A400CECF18 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,7 +128,6 @@
 		55F3040C29864C5C00CECF18 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				55F3040E29864C9600CECF18 /* PlayerInformationTableViewCell.xib */,
 				55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */,
 			);
 			path = CustomViews;
@@ -195,9 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */,
-				55F3041029864C9600CECF18 /* PlayerInformationTableViewCell.xib in Resources */,
 				55F303F4298643A500CECF18 /* Assets.xcassets in Resources */,
-				55F303F2298643A400CECF18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +211,7 @@
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
 				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
 				55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */,
+				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55F303F0298643A400CECF18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55F303F1298643A400CECF18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55F303F5298643A500CECF18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,20 +350,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6765H7YALU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cricketer Info/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "IPL Player List";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gokulbvb.Cricketer-Info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -390,20 +379,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6765H7YALU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cricketer Info/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "IPL Player List";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gokulbvb.Cricketer-Info";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
