@@ -16,6 +16,7 @@ class HomePageViewController: UIViewController {
     var teamNames: [TeamName] = []
     private var selectedTeam: TeamName?
     private var filteredTeam: [PlayerInfoModel]?
+    let cellId = "cellID"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +26,17 @@ class HomePageViewController: UIViewController {
     }
     
     private func setupTeamData() {
-        setupChennaiSuperKingsData()
-        setupGujratTitansData()
-        setupDelhiCapitalsData()
-        seupKolkataKnightRidersData()
-        seupLucknowSuperGiantsData()
-        seupMumbaiIndiansData()
-        seupPunjabKingsData()
-        seupRajasthanRoyalsData()
-        seupRoyalChallengersBangaloreData()
-        setupSunrisersHyderabadData()
-        selectedTeam = teamNames[0]
+//        setupChennaiSuperKingsData()
+//        setupGujratTitansData()
+//        setupDelhiCapitalsData()
+//        seupKolkataKnightRidersData()
+//        seupLucknowSuperGiantsData()
+//        seupMumbaiIndiansData()
+//        seupPunjabKingsData()
+//        seupRajasthanRoyalsData()
+//        seupRoyalChallengersBangaloreData()
+//        setupSunrisersHyderabadData()
+//        selectedTeam = teamNames[0]
     }
     
     private func setupView() {
@@ -53,11 +54,13 @@ class HomePageViewController: UIViewController {
 }
 extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return filteredTeam?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+            cell.textLabel?.text = "hello"
+            return cell
     }
     
     
