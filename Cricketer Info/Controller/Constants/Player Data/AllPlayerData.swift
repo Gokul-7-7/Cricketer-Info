@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension MainPageViewController {
+extension HomePageViewController {
     
     func setupGujratTitansData() {
         teamNames.append(.gujaratTitans)

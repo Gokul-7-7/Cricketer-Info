@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548686D298EF3C2009F03F5 /* AllPlayerData.swift */; };
 		55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */; };
+		555F61D729956DEE00798FAB /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61D629956DEE00798FAB /* hello.swift */; };
 		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
 		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
-		55F303EF298643A400CECF18 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EE298643A400CECF18 /* MainPageViewController.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
 		55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F5298643A500CECF18 /* LaunchScreen.storyboard */; };
 		55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F30400298644EC00CECF18 /* PlayerInfoModel.swift */; };
@@ -25,13 +25,13 @@
 /* Begin PBXFileReference section */
 		5548686D298EF3C2009F03F5 /* AllPlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayerData.swift; sourceTree = "<group>"; };
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		555F61D629956DEE00798FAB /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
 		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55F303EE298643A400CECF18 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		55F303F3298643A500CECF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F303F6298643A500CECF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F303F8298643A500CECF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				55F3040B29864BD700CECF18 /* Constants */,
-				55F303EE298643A400CECF18 /* MainPageViewController.swift */,
 				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
 				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
+				555F61D629956DEE00798FAB /* hello.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F303EF298643A400CECF18 /* MainPageViewController.swift in Sources */,
 				55652E67298AA55800532EA9 /* TeamName.swift in Sources */,
 				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
@@ -224,6 +223,7 @@
 				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
 				55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
+				555F61D729956DEE00798FAB /* hello.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +368,7 @@
 				INFOPLIST_FILE = "Cricketer Info/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "IPL Player List";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = h;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -397,7 +397,7 @@
 				INFOPLIST_FILE = "Cricketer Info/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "IPL Player List";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = h;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
