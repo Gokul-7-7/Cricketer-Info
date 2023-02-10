@@ -100,6 +100,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = PlayerDetailViewController()
+        detailVC.playerData = filteredTeam?[indexPath.row]
         self.navigationController?.pushViewController(detailVC, animated: true)
         
 //        if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PlayerDetailViewController") as? PlayerDetailViewController {
