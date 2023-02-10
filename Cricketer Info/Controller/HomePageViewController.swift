@@ -52,21 +52,17 @@ class HomePageViewController: UIViewController {
     
     func setupPickerViewConstraint() {
         self.view.addSubview(teamPickerView)
-        teamPickerView.translatesAutoresizingMaskIntoConstraints = false
-        teamPickerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 4).isActive = true
-        teamPickerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        teamPickerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        teamPickerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        teamPickerView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: 70, enableInsets: false)
     }
+    
     func setupTableView() {
         self.view.addSubview(listTableView)
-        listTableView.separatorStyle = .singleLine
-        listTableView.separatorColor = .gray
-        listTableView.translatesAutoresizingMaskIntoConstraints = false
-        listTableView.topAnchor.constraint(equalTo: teamPickerView.bottomAnchor).isActive = true
-        listTableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        listTableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        listTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        listTableView.anchor(top: teamPickerView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: nil, enableInsets: false)
+//        listTableView.translatesAutoresizingMaskIntoConstraints = false
+//        listTableView.topAnchor.constraint(equalTo: teamPickerView.bottomAnchor).isActive = true
+//        listTableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//        listTableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+//        listTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
       }
 }
 extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -96,14 +92,23 @@ extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 
 extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return filteredTeam?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            return UITableViewCell()
+        return UITableViewCell()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("amuthhiiitaan daaa")
+        let detailVC = PlayerDetailViewController()
+        self.navigationController?.pushViewController(detailVC, animated: true)
+        
+//        if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PlayerDetailViewController") as? PlayerDetailViewController {
+//            detailVC.playerData = filteredTeam?[indexPath.row]
+//            if indexPath.row == 0, let team = filteredTeam?[0].team, team != .sunrisersHyderabad{
+//                detailVC.isCaptain = true
+//            }
+//            self.navigationController?.pushViewController(detailVC, animated: true)
+//        }
     }
-    
 }
+

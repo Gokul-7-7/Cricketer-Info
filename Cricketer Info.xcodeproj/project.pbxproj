@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				55F3040B29864BD700CECF18 /* Constants */,
-				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
 				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
+				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
 				555F61D629956DEE00798FAB /* hello.swift */,
 			);
 			path = Controller;

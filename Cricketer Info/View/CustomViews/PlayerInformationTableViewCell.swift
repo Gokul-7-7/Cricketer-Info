@@ -8,20 +8,42 @@
 import UIKit
 
 class PlayerInformationTableViewCell: UITableViewCell {
-
-    @IBOutlet var playerImageView: UIImageView!
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var roleLabel: UILabel!
-    @IBOutlet var parentStackView: UIStackView!
-    @IBOutlet var containerView: UIView!
-    @IBOutlet var captainLabel: UILabel!
-        
+    
+    var containerView: UIView {
+        var view = UIView()
+        return view
+    }
+    
+    var verticalStackView: UIStackView {
+        var stackView = UIStackView()
+        stackView.axis = .vertical
+        return stackView
+    }
+    
+    var playerImageView: UIImageView {
+        var imageView = UIImageView()
+        return imageView
+    }
+    
+    var nameLabel: UILabel {
+        var label = UILabel()
+        return label
+    }
+    var roleLabel: UILabel {
+        var label = UILabel()
+        return label
+    }
+    var captainLabel: UILabel {
+        var label = UILabel()
+        return label
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         configureView()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -32,12 +54,34 @@ class PlayerInformationTableViewCell: UITableViewCell {
         roleLabel.text = nil
         captainLabel.text = nil
     }
+    
     func configureView() {
+        setupConstraints()
         playerImageView.clipsToBounds = true
         playerImageView.layer.cornerRadius = 5
         containerView.clipsToBounds = true
         containerView.layer.cornerRadius = 5
     }
+    
+    func setupConstraints() {
+        setupContainerViewConstraints()
+        setupPlayerImageViewConstraints()
+    }
+    
+    func setupContainerViewConstraints() {
+        contentView.addSubview(containerView)
+        containerView.anchor(top: contentView.safeAreaLayoutGuide.topAnchor, leading: contentView.safeAreaLayoutGuide.leadingAnchor, bottom: contentView.safeAreaLayoutGuide.bottomAnchor, trailing: contentView.safeAreaLayoutGuide.trailingAnchor, paddingTop: 4, paddingLeft: 8, paddingBottom: 4, paddingRight: 8, width: nil, height: nil, enableInsets: false)
+    }
+    
+    func setupPlayerImageViewConstraints() {
+        containerView.addSubview(playerImageView)
+        playerImageView.translatesAutoresizingMaskIntoConstraints = false
+        playerImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 4).isActive = true
+        playerImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 4).isActive = true
+        playerImageView.bottomAnchor.constraint(greaterThanOrEqualTo: containerView.bottomAnchor, constant: 4).isActive = true
+    }
+    
+    
     
     func setupViewWith(data: PlayerInfoModel, isCaptain: Bool) {
         if isCaptain {
@@ -48,7 +92,7 @@ class PlayerInformationTableViewCell: UITableViewCell {
         if let imageURL = URL(string: data.image  ?? "") {
             self.playerImageView.load(url: imageURL)
         } else {
-            playerImageView?.isHidden = true
+            playerImageView.isHidden = true
         }
         self.nameLabel.text = data.name ?? "-"
         self.roleLabel.text = data.role?.rawValue ?? "-"
