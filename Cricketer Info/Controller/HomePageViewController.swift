@@ -9,7 +9,12 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     
-    var listTableView = UITableView()
+    var listTableView: UITableView = {
+        var tableView = UITableView()
+        tableView.separatorStyle = .none
+        return tableView
+    }()
+    
     var teamPickerView = UIPickerView()
     
     var allPlayerData: [PlayerInfoModel]? = []
@@ -21,12 +26,13 @@ class HomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        safeArea = view.layoutMarginsGuide
+        listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
         setupPickerViewConstraint()
         setupTableView()
         setupTeamData()
         setupView()
         self.view.backgroundColor = .white
+        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
     }
     
     private func setupTeamData() {
@@ -48,22 +54,18 @@ class HomePageViewController: UIViewController {
         listTableView.delegate = self
         teamPickerView.delegate = self
         teamPickerView.dataSource = self
+        title = "Team Info"
     }
     
     func setupPickerViewConstraint() {
         self.view.addSubview(teamPickerView)
-        teamPickerView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: 70, enableInsets: false)
+        teamPickerView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: 100, enableInsets: false)
     }
     
     func setupTableView() {
         self.view.addSubview(listTableView)
-        listTableView.anchor(top: teamPickerView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: nil, enableInsets: false)
-//        listTableView.translatesAutoresizingMaskIntoConstraints = false
-//        listTableView.topAnchor.constraint(equalTo: teamPickerView.bottomAnchor).isActive = true
-//        listTableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        listTableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-//        listTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-      }
+        listTableView.anchor(top: teamPickerView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: nil, enableInsets: false)
+    }
 }
 extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -91,25 +93,44 @@ extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 }
 
 extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredTeam?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        var tableViewCell = UITableViewCell()
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? PlayerInformationTableViewCell {
+            filteredTeam?.removeAll()
+            filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
+            if let filteredTeam = filteredTeam {
+                if indexPath.row == 0, let team = filteredTeam[0].team, team != .sunrisersHyderabad {
+                    cell.isCaptain = true
+                } else {
+                    cell.isCaptain = false
+                }
+                cell.setupViewWith(data: filteredTeam[indexPath.row])
+            }
+            let bgColor = selectedTeam?.getColor()
+            listTableView.backgroundColor = bgColor
+            cell.backgroundColor = bgColor
+            cell.selectionStyle = .none
+            tableViewCell = cell
+        }
+        return tableViewCell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = PlayerDetailViewController()
         detailVC.playerData = filteredTeam?[indexPath.row]
+        if indexPath.row == 0, let team = filteredTeam?[0].team, team != .sunrisersHyderabad{
+            detailVC.isCaptain = true
+        }
         self.navigationController?.pushViewController(detailVC, animated: true)
-        
-//        if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PlayerDetailViewController") as? PlayerDetailViewController {
-//            detailVC.playerData = filteredTeam?[indexPath.row]
-//            if indexPath.row == 0, let team = filteredTeam?[0].team, team != .sunrisersHyderabad{
-//                detailVC.isCaptain = true
-//            }
-//            self.navigationController?.pushViewController(detailVC, animated: true)
-//        }
     }
 }
 

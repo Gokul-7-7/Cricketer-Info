@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548686D298EF3C2009F03F5 /* AllPlayerData.swift */; };
 		55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */; };
-		555F61D729956DEE00798FAB /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61D629956DEE00798FAB /* hello.swift */; };
 		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
 		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		5548686D298EF3C2009F03F5 /* AllPlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayerData.swift; sourceTree = "<group>"; };
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
-		555F61D629956DEE00798FAB /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
 		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				55F3040B29864BD700CECF18 /* Constants */,
 				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
 				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
-				555F61D629956DEE00798FAB /* hello.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
 				55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
-				555F61D729956DEE00798FAB /* hello.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
