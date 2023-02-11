@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 enum TeamName: String, CaseIterable {
-    case gujaratTitans 
-    case mumbaiIndians
-    case punjabKings
-    case delhiCapitals
-    case rajasthanRoyal
-    case royalChallengersBangalore
-    case sunrisersHyderabad
-    case chennaiSuperKings
-    case lucknowSupergiants
-    case kolkataKnightRiders
+    case gujaratTitans = "Gujrat Titans"
+    case mumbaiIndians = "Mumbai Indians"
+    case punjabKings = "Punjab Kings"
+    case delhiCapitals = "Delhi Capitals"
+    case rajasthanRoyal = "Rajasthan Royals"
+    case royalChallengersBangalore = "Royal Challengers Bangalore"
+    case sunrisersHyderabad = "Sunrisers Hyderabad"
+    case chennaiSuperKings = "Chennai Super Kings"
+    case lucknowSupergiants = "Lucknow Supergiants"
+    case kolkataKnightRiders = "Kolkata Knight Riders"
     
     func getColor() -> UIColor {
         switch self {
@@ -42,31 +42,6 @@ enum TeamName: String, CaseIterable {
             return .cyan
         case .kolkataKnightRiders:
             return .magenta
-        }
-    }
-    
-    func getTeamName() -> String {
-        switch self {
-        case .gujaratTitans:
-            return "Gujrat Titans"
-        case .mumbaiIndians:
-            return "Mumbai Indians"
-        case .punjabKings:
-            return "Punjab Kings"
-        case .delhiCapitals:
-            return "Delhi Capitals"
-        case .rajasthanRoyal:
-            return "Rajasthan Royals"
-        case .royalChallengersBangalore:
-            return "Rajasthan Royals"
-        case .sunrisersHyderabad:
-            return "Sunrisers Hyderabad"
-        case .chennaiSuperKings:
-            return "Chennai Super Kings"
-        case .lucknowSupergiants:
-            return "Lucknow Supergiants"
-        case .kolkataKnightRiders:
-            return "Kolkata Knight Riders"
         }
     }
 }

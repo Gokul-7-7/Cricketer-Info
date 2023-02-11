@@ -11,34 +11,26 @@ class PlayerInformationTableViewCell: UITableViewCell {
     
     var isCaptain: Bool?
     
-    var containerView: UIView = {
+    private var containerView: UIView = {
         var view = UIView()
         view.backgroundColor = .white
         return view
     }()
     
-    var playerImageView: UIImageView = {
+    private var playerImageView: UIImageView = {
         var imageView = UIImageView()
         return imageView
     }()
     
-    var nameLabel: UILabel = {
+    private var nameLabel: UILabel = {
         var label = UILabel()
         label.font = .boldSystemFont(ofSize: 12)
         return label
     }()
     
-    var roleLabel: UILabel = {
+    private var roleLabel: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 10)
-        return label
-    }()
-    
-    var captainLabel: UILabel = {
-        var label = UILabel()
-        label.text = "Captain"
-        label.textColor = .red
-        label.font = .systemFont(ofSize: 11)
         return label
     }()
     
@@ -55,7 +47,6 @@ class PlayerInformationTableViewCell: UITableViewCell {
         playerImageView.image = nil
         nameLabel.text = nil
         roleLabel.text = nil
-        captainLabel.text = nil
     }
     
     private func configureView() {
@@ -68,7 +59,6 @@ class PlayerInformationTableViewCell: UITableViewCell {
         setupContainerViewConstraints()
         setupPlayerImageViewConstraints()
         setupNameLabel()
-        //setupCaptainLabel()
         setupRoleLabel()
     }
     
@@ -91,24 +81,15 @@ class PlayerInformationTableViewCell: UITableViewCell {
         playerImageView.bottomAnchor.constraint(greaterThanOrEqualTo: containerView.bottomAnchor, constant: -4).isActive = true
     }
     
-    func setupNameLabel() {
+    private func setupNameLabel() {
         addSubview(nameLabel)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 2).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: playerImageView.trailingAnchor, constant: 2).isActive = true
         nameLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -4).isActive = true
-        //playerImageView.bottomAnchor.constraint(greaterThanOrEqualTo: containerView.bottomAnchor, constant: -4).isActive = true
     }
     
-    func setupCaptainLabel() {
-        addSubview(captainLabel)
-        captainLabel.translatesAutoresizingMaskIntoConstraints = false
-        captainLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 2).isActive = true
-        captainLabel.leadingAnchor.constraint(equalTo: playerImageView.trailingAnchor, constant: 2).isActive = true
-        captainLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -4).isActive = true
-    }
-    
-    func setupRoleLabel() {
+    private func setupRoleLabel() {
         addSubview(roleLabel)
         roleLabel.translatesAutoresizingMaskIntoConstraints = false
         roleLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 2).isActive = true
@@ -132,16 +113,3 @@ class PlayerInformationTableViewCell: UITableViewCell {
     }
 }
 
-extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
-}

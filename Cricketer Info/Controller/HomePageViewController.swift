@@ -9,20 +9,20 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     
-    var listTableView: UITableView = {
+    private var listTableView: UITableView = {
         var tableView = UITableView()
         tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = true
+        tableView.showsHorizontalScrollIndicator = true
         return tableView
     }()
-    
-    var teamPickerView = UIPickerView()
+    private var teamPickerView = UIPickerView()
     
     var allPlayerData: [PlayerInfoModel]? = []
     var teamNames: [TeamName] = []
     private var selectedTeam: TeamName?
     private var filteredTeam: [PlayerInfoModel]?
-    let cellId = "cellID"
-    var safeArea: UILayoutGuide!
+    private let cellId = "cellID"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,16 +57,17 @@ class HomePageViewController: UIViewController {
         title = "Team Info"
     }
     
-    func setupPickerViewConstraint() {
+    private func setupPickerViewConstraint() {
         self.view.addSubview(teamPickerView)
         teamPickerView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: 100, enableInsets: false)
     }
     
-    func setupTableView() {
+    private func setupTableView() {
         self.view.addSubview(listTableView)
         listTableView.anchor(top: teamPickerView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: nil, enableInsets: false)
     }
 }
+
 extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -78,17 +79,17 @@ extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return teamNames[row].getTeamName()
+        return teamNames[row].rawValue
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         filteredTeam?.removeAll()
         selectedTeam = teamNames[row]
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        self.listTableView.backgroundColor = teamNames[row].getColor()
-        self.listTableView.reloadData()
+        listTableView.backgroundColor = teamNames[row].getColor()
         let indexPath = IndexPath(row: 0, section: 0)
-        self.listTableView.scrollToRow(at: indexPath, at: .top, animated: false)
+        listTableView.scrollsToTop = true
+        listTableView.reloadData()
     }
 }
 
