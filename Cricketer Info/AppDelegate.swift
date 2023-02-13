@@ -47,3 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //Responding to events that target the app itself, and aren’t specific to your app’s scenes, views, or view controllers
 //
 //Registering for any required services at launch time, such as Apple Push Notification service
+
+//Launch time is an important point in an app’s life cycle. At launch time, the app delegate is responsible for executing any custom code required to initialize your app. For example, the app delegate typically creates the app’s initial data structures, registers for any required services, and tweaks the app’s initial user interface based on any available data.
