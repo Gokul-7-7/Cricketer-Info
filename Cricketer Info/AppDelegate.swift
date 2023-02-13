@@ -34,3 +34,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//Your app delegate object manages your app’s shared behaviors. The app delegate is effectively the root object of your app, and it works in conjunction with UIApplication to manage some interactions with the system. Like the UIApplication object, UIKit creates your app delegate object early in your app’s launch cycle so it’s always present.
+//
+//Use your app delegate object to handle the following tasks:
+//
+//Initializing your app’s central data structures
+//
+//Configuring your app’s scenes
+//
+//Responding to notifications originating from outside the app, such as low-memory warnings, download completion notifications, and more
+//
+//Responding to events that target the app itself, and aren’t specific to your app’s scenes, views, or view controllers
+//
+//Registering for any required services at launch time, such as Apple Push Notification service
