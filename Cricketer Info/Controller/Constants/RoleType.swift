@@ -13,7 +13,7 @@ enum RoleType: String {
     case bowler = "🎾"
     case wicketKeeperBatsman = "🧤🏏"
     
-    func getText() -> String {
+    var roleText: String {
         switch self {
         case .batsman:
             return "Batsman"

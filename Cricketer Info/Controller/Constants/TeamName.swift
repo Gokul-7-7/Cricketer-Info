@@ -20,7 +20,7 @@ enum TeamName: String, CaseIterable {
     case lucknowSupergiants = "Lucknow Supergiants"
     case kolkataKnightRiders = "Kolkata Knight Riders"
     
-    func getColor() -> UIColor {
+    var color: UIColor {
         switch self {
         case .gujaratTitans:
             return .cyan

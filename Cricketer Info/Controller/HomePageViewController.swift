@@ -86,8 +86,7 @@ extension HomePageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         filteredTeam?.removeAll()
         selectedTeam = teamNames[row]
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        listTableView.backgroundColor = teamNames[row].getColor()
-        let indexPath = IndexPath(row: 0, section: 0)
+        listTableView.backgroundColor = teamNames[row].color
         listTableView.scrollsToTop = true
         listTableView.reloadData()
     }
@@ -116,7 +115,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 cell.setupViewWith(data: filteredTeam[indexPath.row])
             }
-            let bgColor = selectedTeam?.getColor()
+            let bgColor = selectedTeam?.color
             listTableView.backgroundColor = bgColor
             cell.backgroundColor = bgColor
             cell.selectionStyle = .none
