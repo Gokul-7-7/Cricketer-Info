@@ -9,9 +9,9 @@ import UIKit
 
 class PlayerDetailViewController: UIViewController {
     
-    var playerImageView: UIImageView = UIImageView()
+    private lazy var playerImageView: UIImageView = UIImageView()
     
-    var playerNameLabel: UILabel = {
+    private lazy var playerNameLabel: UILabel = {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .headline)
         label.textColor = .black
@@ -19,7 +19,7 @@ class PlayerDetailViewController: UIViewController {
         return label
     }()
     
-    var playerRoleLabel: UILabel = {
+    private lazy var playerRoleLabel: UILabel = {
         let label = UILabel()
         label.font = .italicSystemFont(ofSize: 13)
         label.textColor = .gray
@@ -27,7 +27,7 @@ class PlayerDetailViewController: UIViewController {
         return label
     }()
     
-    var playerDescriptionTextView: UITextView = {
+    private lazy var playerDescriptionTextView: UITextView = {
         let textView = UITextView()
         textView.isUserInteractionEnabled = false
         textView.font = .systemFont(ofSize: 14)
@@ -47,14 +47,14 @@ class PlayerDetailViewController: UIViewController {
         setupNavigationBar()
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         setupPlayerImageViewConstraints()
         setupPlayerNameLabelConstraints()
         setupPlayerRoleLabelConstraints()
         setupPlayerDescriptionTextViewConstraints()
     }
     
-    func setupPlayerImageViewConstraints() {
+    private func setupPlayerImageViewConstraints() {
         self.view.addSubview(playerImageView)
         self.playerImageView.translatesAutoresizingMaskIntoConstraints = false
         playerImageView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
@@ -63,7 +63,7 @@ class PlayerDetailViewController: UIViewController {
         playerImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
-    func setupPlayerNameLabelConstraints() {
+    private func setupPlayerNameLabelConstraints() {
         self.view.addSubview(playerNameLabel)
         playerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         playerNameLabel.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
@@ -71,7 +71,7 @@ class PlayerDetailViewController: UIViewController {
         playerNameLabel.topAnchor.constraint(equalTo: playerImageView.bottomAnchor, constant: 16).isActive = true
     }
     
-    func setupPlayerRoleLabelConstraints() {
+    private func setupPlayerRoleLabelConstraints() {
         self.view.addSubview(playerRoleLabel)
         playerRoleLabel.translatesAutoresizingMaskIntoConstraints = false
         playerRoleLabel.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
@@ -79,7 +79,7 @@ class PlayerDetailViewController: UIViewController {
         playerRoleLabel.topAnchor.constraint(equalTo: playerNameLabel.bottomAnchor, constant: 16).isActive = true
     }
     
-    func setupPlayerDescriptionTextViewConstraints() {
+    private func setupPlayerDescriptionTextViewConstraints() {
         self.view.addSubview(playerDescriptionTextView)
         playerDescriptionTextView.translatesAutoresizingMaskIntoConstraints = false
         playerDescriptionTextView.topAnchor.constraint(equalTo: playerRoleLabel.bottomAnchor, constant: 8).isActive = true
@@ -88,7 +88,7 @@ class PlayerDetailViewController: UIViewController {
         playerDescriptionTextView.bottomAnchor.constraint(greaterThanOrEqualTo: self.view.bottomAnchor, constant: 16).isActive = true
     }
     
-    func setupNavigationBar() {
+    private func setupNavigationBar() {
         self.navigationController?.title = "Player Detail"
         let backButton = UIBarButtonItem()
         backButton.title = "Back"

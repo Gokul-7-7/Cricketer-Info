@@ -9,14 +9,14 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     
-    private var listTableView: UITableView = {
+    private lazy var listTableView: UITableView = {
         var tableView = UITableView()
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = true
         tableView.showsHorizontalScrollIndicator = true
         return tableView
     }()
-    private var teamPickerView = UIPickerView()
+    private lazy var teamPickerView = UIPickerView()
     
     var allPlayerData: [PlayerInfoModel]? = []
     var teamNames: [TeamName] = []
