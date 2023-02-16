@@ -103,34 +103,36 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var tableViewCell = UITableViewCell()
-        if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? PlayerInformationTableViewCell {
-            filteredTeam?.removeAll()
-            filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-            if let filteredTeam = filteredTeam {
-                if indexPath.row == 0, let team = filteredTeam[0].team, team != .sunrisersHyderabad {
-                    cell.isCaptain = true
-                } else {
-                    cell.isCaptain = false
-                }
-                cell.setupViewWith(data: filteredTeam[indexPath.row])
-            }
-            let bgColor = selectedTeam?.color
-            listTableView.backgroundColor = bgColor
-            cell.backgroundColor = bgColor
-            cell.selectionStyle = .none
-            tableViewCell = cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? PlayerInformationTableViewCell else {
+            return UITableViewCell()
         }
-        return tableViewCell
+        let bgColor = selectedTeam?.color
+        listTableView.backgroundColor = bgColor
+        cell.backgroundColor = bgColor
+        cell.selectionStyle = .none
+        
+        if let playerData = getPlayerDataForCurrentIndexPath(indexPath) {
+            cell.setupViewWith(data: playerData)
+        }
+        return cell
+    }
+
+    private func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> PlayerInfoModel? {
+        filteredTeam?.removeAll()
+        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
+        guard let filteredTeam = filteredTeam, indexPath.row < filteredTeam.count else {
+            return nil
+        }
+        let playerData = filteredTeam[indexPath.row]
+        return playerData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC = PlayerDetailViewController()
-        detailVC.playerData = filteredTeam?[indexPath.row]
-        if indexPath.row == 0, let team = filteredTeam?[0].team, team != .sunrisersHyderabad{
-            detailVC.isCaptain = true
+        guard let playerData = filteredTeam?[indexPath.row] else {
+            return
         }
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        let coordinator = Coordinator(navigationController: navigationController ?? UINavigationController())
+        coordinator.showPlayerDetail(playerData: playerData, isCaptain: indexPath.row == 0 && playerData.team != .sunrisersHyderabad)
     }
 }
 
