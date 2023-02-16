@@ -131,7 +131,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
         guard let playerData = filteredTeam?[indexPath.row] else {
             return
         }
-        let coordinator = Coordinator(navigationController: navigationController ?? UINavigationController())
+        let coordinator = MainCoordinator(navigationController: navigationController ?? UINavigationController())
         coordinator.showPlayerDetail(playerData: playerData, isCaptain: indexPath.row == 0 && playerData.team != .sunrisersHyderabad)
     }
 }

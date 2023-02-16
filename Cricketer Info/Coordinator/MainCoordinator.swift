@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class Coordinator {
+class MainCoordinator: Coordinator {
     
-    private let navigationController: UINavigationController
+    var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -22,4 +22,5 @@ class Coordinator {
         detailVC.isCaptain = isCaptain
         navigationController.pushViewController(detailVC, animated: true)
     }
+    //other navigations
 }
