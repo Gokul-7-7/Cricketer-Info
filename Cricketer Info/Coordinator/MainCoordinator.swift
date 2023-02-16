@@ -16,6 +16,11 @@ class MainCoordinator: Coordinator {
         self.navigationController = navigationController
     }
     
+    func showHomePage() {
+        let homepageVC = HomePageViewController()
+        navigationController.pushViewController(homepageVC, animated: false)
+    }
+    
     func showPlayerDetail(playerData: PlayerInfoModel, isCaptain: Bool) {
         let detailVC = PlayerDetailViewController()
         detailVC.playerData = playerData
