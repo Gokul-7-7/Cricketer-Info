@@ -11,6 +11,8 @@
 		55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */; };
 		5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */; };
 		5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C1299EA72D00468EC4 /* Coordinator.swift */; };
+		5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */; };
+		5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */; };
 		555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61DE2998283700798FAB /* ImageViewExtension.swift */; };
 		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
@@ -29,6 +31,8 @@
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5553D3C1299EA72D00468EC4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+Constraints.swift"; sourceTree = "<group>"; };
+		5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		555F61DE2998283700798FAB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		5553D3C5299F2CBC00468EC4 /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
+				5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
 		55C1C73C29940F5D00A8DD86 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 			children = (
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
 				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
+				55F3040B29864BD700CECF18 /* Constants */,
 				5553D3C0299EA6F100468EC4 /* Coordinator */,
 				55F30404298644FD00CECF18 /* Model */,
 				55F303FE298643FF00CECF18 /* Controller */,
@@ -116,9 +130,9 @@
 		55F303FE298643FF00CECF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55F3040B29864BD700CECF18 /* Constants */,
 				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
 				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
+				5553D3C5299F2CBC00468EC4 /* UIExtensions */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +245,7 @@
 				55652E67298AA55800532EA9 /* TeamName.swift in Sources */,
 				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
+				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
 				5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */,
@@ -238,6 +253,7 @@
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
 				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
 				5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */,
+				5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */,
 				55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
