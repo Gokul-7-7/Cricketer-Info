@@ -27,11 +27,8 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
-        setupPickerViewConstraint()
-        setupTableView()
         setupTeamData()
         setupView()
-        self.view.backgroundColor = .white
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
     }
     

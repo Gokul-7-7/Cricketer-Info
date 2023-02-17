@@ -15,6 +15,13 @@ extension HomePageViewController {
         teamPickerView.delegate = self
         teamPickerView.dataSource = self
         title = "Team Info"
+        self.view.backgroundColor = .white
+        setupConstraints()
+    }
+    
+    func setupConstraints() {
+        setupPickerViewConstraint()
+        setupTableView()
     }
     
     func setupPickerViewConstraint() {
