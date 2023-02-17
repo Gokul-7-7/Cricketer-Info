@@ -76,13 +76,13 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		5553D3C5299F2CBC00468EC4 /* UIExtensions */ = {
+		5553D3C5299F2CBC00468EC4 /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
 				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
 				5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */,
 			);
-			path = UIExtensions;
+			path = Constraints;
 			sourceTree = "<group>";
 		};
 		55C1C73C29940F5D00A8DD86 /* Extension */ = {
@@ -132,7 +132,7 @@
 			children = (
 				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
 				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
-				5553D3C5299F2CBC00468EC4 /* UIExtensions */,
+				5553D3C5299F2CBC00468EC4 /* Constraints */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

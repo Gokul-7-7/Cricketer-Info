@@ -32,7 +32,7 @@ class HomePageViewController: UIViewController {
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
     }
     
-    private func setupTeamData() {
+    func setupTeamData() {
         setupChennaiSuperKingsData()
         setupGujratTitansData()
         setupDelhiCapitalsData()
