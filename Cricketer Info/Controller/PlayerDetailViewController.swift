@@ -7,6 +7,18 @@
 
 import UIKit
 
+protocol Something: AnyObject {
+    func doNothing()
+}
+
+struct What: Something {
+    func doNothing() {
+        <#code#>
+    }
+    
+    
+}
+
 class PlayerDetailViewController: UIViewController {
     
     lazy var playerImageView: UIImageView = UIImageView()
