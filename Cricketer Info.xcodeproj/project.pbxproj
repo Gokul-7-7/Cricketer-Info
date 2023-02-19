@@ -14,6 +14,7 @@
 		5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */; };
 		5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */; };
 		5553D3E029A1289400468EC4 /* TeamData.json in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3DF29A1289400468EC4 /* TeamData.json */; };
+		5553D3E529A1FF0900468EC4 /* TeamPlayerData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5553D3E429A1FF0900468EC4 /* TeamPlayerData.geojson */; };
 		555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61DE2998283700798FAB /* ImageViewExtension.swift */; };
 		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
@@ -34,7 +35,8 @@
 		5553D3C1299EA72D00468EC4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailViewController+Constraints.swift"; sourceTree = "<group>"; };
-		5553D3DF29A1289400468EC4 /* TeamData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = TeamData.json; path = "Cricketer Info/Data/TeamData.json"; sourceTree = SOURCE_ROOT; };
+		5553D3DF29A1289400468EC4 /* TeamData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = TeamData.json; path = "Cricketer Info/TeamData.json"; sourceTree = SOURCE_ROOT; };
+		5553D3E429A1FF0900468EC4 /* TeamPlayerData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TeamPlayerData.geojson; sourceTree = "<group>"; };
 		555F61DE2998283700798FAB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				5548686D298EF3C2009F03F5 /* AllPlayerData.swift */,
-				5553D3DF29A1289400468EC4 /* TeamData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -123,6 +124,7 @@
 		55F303E9298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXGroup;
 			children = (
+				5553D3DF29A1289400468EC4 /* TeamData.json */,
 				5553D3DE29A1286900468EC4 /* Data */,
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
 				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
@@ -134,6 +136,7 @@
 				55F303F3298643A500CECF18 /* Assets.xcassets */,
 				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 				55F303F8298643A500CECF18 /* Info.plist */,
+				5553D3E429A1FF0900468EC4 /* TeamPlayerData.geojson */,
 			);
 			path = "Cricketer Info";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */,
 				55F303F4298643A500CECF18 /* Assets.xcassets in Resources */,
+				5553D3E529A1FF0900468EC4 /* TeamPlayerData.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

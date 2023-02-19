@@ -41,7 +41,7 @@ class PlayerDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        view.backgroundColor = .white
         setupConstraints()
         setupViewWithData()
         setupNavigationBar()
@@ -49,18 +49,18 @@ class PlayerDetailViewController: UIViewController {
     
     func setupViewWithData() {
         if let imageURL = URL(string: playerData?.image  ?? "") {
-            self.playerImageView.load(url: imageURL)
+            playerImageView.load(url: imageURL)
         } else {
             playerImageView.isHidden = true
         }
-        self.playerNameLabel.text = playerData?.name ?? "-"
+        playerNameLabel.text = playerData?.name ?? "-"
         let role = playerData?.role?.roleText ?? "-"
         if isCaptain ?? false {
-            self.playerRoleLabel.text = "Captain ◎ \(role)"
+            playerRoleLabel.text = "Captain ◎ \(role)"
         } else {
-            self.playerRoleLabel.text = role
+            playerRoleLabel.text = role
         }
-        self.playerDescriptionTextView.isUserInteractionEnabled = false
-        self.playerDescriptionTextView.text = playerData?.description ?? "-"
+        playerDescriptionTextView.isUserInteractionEnabled = false
+        playerDescriptionTextView.text = playerData?.description ?? "-"
     }
 }

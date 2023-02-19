@@ -9,23 +9,6 @@ import Foundation
 
 extension HomePageViewController {
     
-    func setupGujratTitansData() {
-        teamNames.append(.gujaratTitans)
-        let gujratTitanPlayers = [
-            PlayerInfoModel(name: "Hardik Pandya", role: .allRounder, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/2740.png", description: "A big hitter and a fast-bowling all-rounder, Hardik ticks all the boxes that a team desires from an all-rounder. It was no surprise that he was fast-tracked into the Indian ODI and T20 side after a successful run in the IPL 2015. In his debut IPL game against RCB, he hit a six off just the second ball he faced.", team: .gujaratTitans),
-            PlayerInfoModel(name: "Abhinav Manohar", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/20589.png", description: "Abhinav Manohar is a good team player", team: .gujaratTitans),
-            PlayerInfoModel(name: "David Miller", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/187.png", description: "Agressive and experienced batsman", team: .gujaratTitans),
-            PlayerInfoModel(name: "Shubman Gill", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/3761.png", description: "Young and good hitter of the ball", team: .gujaratTitans),
-            PlayerInfoModel(name: "Matthew Wade", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/290.png", description: "Overseas player", team: .gujaratTitans),
-            PlayerInfoModel(name: "Wriddhiman Saha", role: .wicketKeeperBatsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/16.png", description: "Experienced wicketkeeper batsman", team: .gujaratTitans),
-            PlayerInfoModel(name: "Vijay Shankar", role: .allRounder, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/1083.png", description: "Good all rounder", team: .gujaratTitans),
-            PlayerInfoModel(name: "B. Sai Sudharsan", role: .allRounder, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/20592.png", description: "Good relaiable all rounder for GT", team: .gujaratTitans),
-            PlayerInfoModel(name: "Mohammad Shami", role: .bowler, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/94.png", description: "The best pace bowler who is consistent with his lines", team: .gujaratTitans),
-            PlayerInfoModel(name: "Rashid Khan", role: .bowler, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/2885.png", description: "The best spin bowler from Afghanisthan", team: .gujaratTitans)
-        ]
-        allPlayerData?.append(contentsOf: gujratTitanPlayers)
-    }
-    
     func setupChennaiSuperKingsData() {
         teamNames.append(.chennaiSuperKings)
         let cskPlayers = [
@@ -42,6 +25,23 @@ extension HomePageViewController {
             PlayerInfoModel(name: "Mukesh Choudhary", role: .bowler, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/20575.png", description: "Aggressive bowler", team: .chennaiSuperKings)
         ]
         allPlayerData?.append(contentsOf: cskPlayers)
+    }
+    
+    func setupGujratTitansData() {
+        teamNames.append(.gujaratTitans)
+        let gujratTitanPlayers = [
+            PlayerInfoModel(name: "Hardik Pandya", role: .allRounder, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/2740.png", description: "A big hitter and a fast-bowling all-rounder, Hardik ticks all the boxes that a team desires from an all-rounder. It was no surprise that he was fast-tracked into the Indian ODI and T20 side after a successful run in the IPL 2015. In his debut IPL game against RCB, he hit a six off just the second ball he faced.", team: .gujaratTitans),
+            PlayerInfoModel(name: "Abhinav Manohar", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/20589.png", description: "Abhinav Manohar is a good team player", team: .gujaratTitans),
+            PlayerInfoModel(name: "David Miller", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/187.png", description: "Agressive and experienced batsman", team: .gujaratTitans),
+            PlayerInfoModel(name: "Shubman Gill", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/3761.png", description: "Young and good hitter of the ball", team: .gujaratTitans),
+            PlayerInfoModel(name: "Matthew Wade", role: .batsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/290.png", description: "Overseas player", team: .gujaratTitans),
+            PlayerInfoModel(name: "Wriddhiman Saha", role: .wicketKeeperBatsman, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/16.png", description: "Experienced wicketkeeper batsman", team: .gujaratTitans),
+            PlayerInfoModel(name: "Vijay Shankar", role: .allRounder, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/1083.png", description: "Good all rounder", team: .gujaratTitans),
+            PlayerInfoModel(name: "B. Sai Sudharsan", role: .allRounder, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/20592.png", description: "Good relaiable all rounder for GT", team: .gujaratTitans),
+            PlayerInfoModel(name: "Mohammad Shami", role: .bowler, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/94.png", description: "The best pace bowler who is consistent with his lines", team: .gujaratTitans),
+            PlayerInfoModel(name: "Rashid Khan", role: .bowler, image: "https://assets.iplt20.com/ipl/IPLHeadshot2022/2885.png", description: "The best spin bowler from Afghanisthan", team: .gujaratTitans)
+        ]
+        allPlayerData?.append(contentsOf: gujratTitanPlayers)
     }
     
     func setupDelhiCapitalsData() {

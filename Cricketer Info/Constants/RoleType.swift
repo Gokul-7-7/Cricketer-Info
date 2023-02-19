@@ -25,4 +25,5 @@ enum RoleType: String {
             return "Wicket Keeper Batsman"
         }
     }
+    ///In general, properties are better suited for representing static data, while functions are better suited for representing dynamic behavior. However, this is not a hard and fast rule, and there may be cases where a property is used to represent a calculated value or a function is used to represent a static behavior.
 }

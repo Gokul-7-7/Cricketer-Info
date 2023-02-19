@@ -1,0 +1,761 @@
+{
+    "teams" : [
+        {
+            "name": "Chennai Super Kings",
+            "players": [
+                {
+                    "name": "Mahendra Singh Dhoni",
+                    "description": "A batting powerhouse, MS Dhoni possesses the ability to destroy different bowling attacks on his own. The calmness and composure in his demeanor along with a sharp cricketing brain accounts for a lethal combination on the cricketing field and the glistening silverware in the trophy cabinets at CSK are a testimony to his extraordinary leadership skills.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1.png",
+                    "role": "wicketKeeperBatsman",
+                    "captain": true
+                },
+                {
+                    "name": "Ruturaj Gaikwad",
+                    "description": "The opening batter who hails from Pune, Ruturaj Gaikwad has been a consistent performer for his state team Maharashtra. He was the highest run-getter for Maharashtra in the league stage of the Syed Mushtaq Ali Trophy 2018-19. At the IPL 2019 Player Auction, the Chennai Super Kings secured his services at his base price of INR 20 lacs. He has been their most consistent opener and will look to do the same come April and May.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/5443.png",
+                    "role": "batsman",
+                    "captain": false
+                },
+                {
+                    "name": "Devon Conway",
+                    "description": "The classy and stylist top order batter, Devon Conway was bought by the CSK for his base price of INR 1 crore at the IPL 2022 Mega Auction. Born in South Africa, Devon Conway plays for New Zealand and is known for switching gears while batting and can also keep wickets if required",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20572.png",
+                    "role": "batsman",
+                    "captain": false
+                },
+                {
+                    "name": "Ambati Rayudu",
+                    "description": "Power hitter and middle order batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/100.png",
+                    "role": "batsman",
+                    "captain": false
+                },
+                {
+                    "name": "Ravindra Jadeja",
+                    "description": "Best allrounder, power hitter, best fielder",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/9.png",
+                    "role": "allRounder",
+                    "captain": false
+                },
+                {
+                    "name": "Dwaine Pretorius",
+                    "description": "Good overseas allrounder",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20573.png",
+                    "role": "allRounder",
+                    "captain": false
+                },
+                {
+                    "name": "Mitchell Santner",
+                    "description": "Power hitter and good spin bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1903.png",
+                    "role": "allRounder",
+                    "captain": false
+                },
+                {
+                    "name": "Moeen Ali",
+                    "description": "Power hitter, reliable batsman and spin bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1735.png",
+                    "role": "allRounder",
+                    "captain": false
+                },
+                {
+                    "name": "Deepak Chahar",
+                    "description": "Pace bowler, average economy is good and he bowls well as an opening bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/140.png",
+                    "role": "bowler",
+                    "captain": false
+                },
+                {
+                    "name": "Maheesh Theekshana",
+                    "description": "Srilankan bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20570.png",
+                    "role": "bowler",
+                    "captain": false
+                },
+                {
+                    "name": "Mukesh Choudhary",
+                    "description": "Agressive bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20575.png",
+                    "role": "bowler",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Gujrat Titans",
+            "players": [
+                {
+                    "name": "Hardik Pandya",
+                    "description": "A big hitter and a fast-bowling all-rounder, Hardik ticks all the boxes that a team desires from an all-rounder. It was no surprise that he was fast-tracked into the Indian ODI and T20 side after a successful run in the IPL 2015. In his debut IPL game against RCB, he hit a six off just the second ball he faced.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/2740.png",
+                    "role": "allRounder",
+                    "captain": true
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Delhi Captains",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Kolkata Knight Riders",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Lucknow Super Giants",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Mumbai Indians",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Punjab Kings",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Rajasthan Royal",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Royal Challengers Bangalore",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        },
+        {
+            "name": "Sunrisers Hyderabad",
+            "players": [
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "imageURL": "",
+                    "role": "",
+                    "captain": false
+                }
+            ]
+        }
+    ]
+}

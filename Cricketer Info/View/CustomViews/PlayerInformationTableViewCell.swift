@@ -100,15 +100,15 @@ class PlayerInformationTableViewCell: UITableViewCell {
     
     func setupViewWith(data: PlayerInfoModel) {
         if let imageURL = URL(string: data.image  ?? "") {
-            self.playerImageView.load(url: imageURL)
+            playerImageView.load(url: imageURL)
         } else {
             playerImageView.isHidden = true
         }
-        self.nameLabel.text = data.name ?? "-"
+        nameLabel.text = data.name ?? "-"
         if isCaptain ?? false {
-            self.roleLabel.text = "Captain ◎ \(data.role?.rawValue ?? "-")"
+            roleLabel.text = "Captain ◎ \(data.role?.rawValue ?? "-")"
         } else {
-            self.roleLabel.text =  data.role?.rawValue ?? "-"
+            roleLabel.text =  data.role?.rawValue ?? "-"
         }
     }
 }

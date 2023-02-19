@@ -8,7 +8,8 @@
 import UIKit
 
 class HomePageViewController: UIViewController {
-    
+    ///Lazy properties can be helpful in UI element creation in Swift because they allow you to delay the creation of the element until it's actually needed. This can improve app performance and reduce memory usage, especially if the UI element is complex or resource-intensive.
+    ///For example, suppose you have a view controller that needs to display an image view, but the image itself isn't loaded until later in the view controller's lifecycle. You can declare the image view as a lazy property, so it's only created when it's actually needed
     lazy var listTableView: UITableView = {
         var tableView = UITableView()
         tableView.separatorStyle = .none
@@ -26,11 +27,59 @@ class HomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        jsonLoader()
         listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
         setupTeamData()
         setupView()
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
     }
+    
+    func jsonLoader() {
+        let fileName = "TeamPlayerData"
+        let fileType = "geojson"
+        
+        if let path = Bundle.main.url(forResource: fileName, withExtension: fileType) {
+            do {
+                //let data = try Data(contentsOf: URL(filePath: path), options: .mappedIfSafe)
+                //let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                print(path)
+            } catch {
+                print("Couldn't load data from JSON")
+            }
+        } else {
+            print("abc")
+        }
+        
+    }
+    
+    func loadJSONFromFile() {
+        // Get the file path for the JSON file
+        guard let filePath = Bundle.main.path(forResource: "TeamData", ofType: "json") else {
+            print("Error: JSON file not found")
+            return
+        }
+        
+        do {
+            // Load the contents of the JSON file into a Data object
+            let data = try Data(contentsOf: URL(fileURLWithPath: filePath))
+            
+            // Parse the JSON data into an array of dictionaries
+            let jsonArray = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
+            
+            // Check if parsing was successful
+            guard let teams = jsonArray else {
+                print("Error: Failed to parse JSON data")
+                return
+            }
+            
+            // Use the teams array as needed
+            print("Loaded teams:", teams)
+            
+        } catch {
+            print("Error: Failed to load or parse JSON file:", error.localizedDescription)
+        }
+    }
+
     
     func setupTeamData() {
         setupChennaiSuperKingsData()
