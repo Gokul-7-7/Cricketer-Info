@@ -27,3 +27,9 @@ struct PlayerInfoModel {
     var team: TeamName
 }
 ///Why did i remove optional from every property?
+
+//In Swift, properties in a data model struct should be marked as optional only if they are not essential for the data model to be valid or for a specific functionality. If a property is required for the data model to function correctly, it should be marked as non-optional.
+//
+//If all properties are marked as optional, it can lead to unexpected errors at runtime when trying to access properties that are nil. Additionally, it can make the code harder to read and understand, as it requires additional checks and handling of optional values.
+//
+//In Swift, a better approach is to use optionals only when necessary and to handle them safely using optional binding or optional chaining. This approach ensures that the code is both safe and easy to read and understand.
