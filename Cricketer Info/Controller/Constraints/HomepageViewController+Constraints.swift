@@ -7,11 +7,14 @@
 
 extension HomePageViewController {
     
-    func setupView() {
+    func setDelegateAndDataSource() {
         listTableView.dataSource = self
         listTableView.delegate = self
         teamPickerView.delegate = self
         teamPickerView.dataSource = self
+    }
+    
+    func setupUI() {
         title = "Team Info"
         view.backgroundColor = .white
         setupConstraints()

@@ -30,7 +30,8 @@ class HomePageViewController: UIViewController {
         jsonLoader()
         listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
         setupTeamData()
-        setupView()
+        setupUI()
+        setDelegateAndDataSource()
         filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
     }
     
