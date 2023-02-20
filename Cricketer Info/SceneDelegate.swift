@@ -53,3 +53,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+//scene(_:willConnectTo:options:)
+///This is the first method called in UISceneSession life cycle. This method will creates new UIWindow, sets the root view controller and makes this window the key window to be displayed.
+//sceneWillEnterForeground(_:)
+///This method is called when the scene is about to start like when app becomes active for the first time or when transitions from background to foreground.
+//sceneDidBecomeActive(_:)
+///This method is called right after the WillEnterForeground method and here the scene is set-up and visible and ready to use.
+//sceneWillResignActive(_:) and sceneDidEnterBackground(_:)
+///These methods are called when app stages to backgground .
+//sceneDidDisconnect(_:)
+///This is the interesting method of all the methods. When ever the scene is sent to background, iOS might decide to completely discard the scene to free up the resources. This doesn’t meant that the app is killed or not running, but just the scene is disconnected from the session and is not active. iOS can decide to reconnect back this scene to scene session when the user brings that particular scene to foreground again . This method can be used to discard any resources that aren’t used anymore.
