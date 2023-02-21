@@ -93,66 +93,66 @@
                     "captain": true
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Abhinav Manohar",
+                    "description": "Abhinav Manohar is a good team player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20589.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "David Miller",
+                    "description": "Agressive and experienced batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/187.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Shubman Gill",
+                    "description": "Young and good hitter of the ball",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3761.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Matthew Wade",
+                    "description": "Overseas player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/290.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Wriddhiman Saha",
+                    "description": "Experienced wicketkeeper batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/16.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Vijay Shankar",
+                    "description": "Good all rounder",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1083.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
+                    "name": "B. Sai Sudharsan",
                     "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20592.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Mohammad Shami",
+                    "description": "The best pace bowler who is consistent with his lines",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/94.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Rashid Khan",
+                    "description": "The best spin bowler from Afghanisthan",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/2885.png",
+                    "role": "bowler",
                     "captain": false
                 }
             ]
@@ -161,73 +161,66 @@
             "name": "Delhi Captains",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Rishabh Pant",
+                    "description": "Aggressive batsman and captain of the team",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/2972.png",
+                    "role": "wicketKeeperBatsman",
+                    "captain": true
+                },
+                {
+                    "name": "David Warner",
+                    "description": "Mr. Consistency",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/170.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Prithvi Shaw",
+                    "description": "Good batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3764.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Rovman Powell",
+                    "description": "Hard hitter of the ball",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3333.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Axar Patel",
+                    "description": "Spin bowler and good reliable lower order batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1113.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Kamlesh Nagarkoti",
+                    "description": "Seamer Kamlesh Nagarkoti was one of the bright sparks of the 2018 U19 World Cup who looked like a promising fast bowler ready to shine. He was even drafted into the KKR squad for the 2018 IPL season.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3766.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Sarfaraz Khan",
+                    "description": "Good batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1564.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Pravin Dubey",
+                    "description": "A leg-spinner and a right-handed batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3188.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
-                    "captain": false
-                },
-                {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
-                    "captain": false
-                },
-                {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Mitchell Marsh",
+                    "description": "What a bowler!",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/221.png",
+                    "role": "bowler",
                     "captain": false
                 }
             ]
@@ -236,73 +229,73 @@
             "name": "Kolkata Knight Riders",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Shreyas Iyer",
+                    "description": "Consistent and good hitter of the ball",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1563.png",
+                    "role": "batsman",
+                    "captain": true
+                },
+                {
+                    "name": "Rinku Singh",
+                    "description": "Good and set batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3830.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Nitish Rana",
+                    "description": "Good and aggressive batsman",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/2738.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Anukul Roy",
+                    "description": "A five-wicket haul followed by a four-fer in the ICC U19 World Cup helped Anukul Roy shoot to the limelight.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3774.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Andre Russell",
+                    "description": "The madman who can hit everything to a six",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/177.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Venkatesh Iyer",
+                    "description": "A look at Venkatesh Iyer’s domestic record would tell you why the Kolkata Knight Riders were keen to pick him ahead of the 2021 season. ",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/8540.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Umesh Yadav",
+                    "description": "Good bowler with a litter higher economy",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/59.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Tim Southee",
+                    "description": "Good everseas bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/307.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Sunil Narine",
+                    "description": "Power hitter and a world class mystery spin bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/203.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
-                    "captain": false
-                },
-                {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Varun Chakaravarthy",
+                    "description": "Good medium paced bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/5432.png",
+                    "role": "bowler",
                     "captain": false
                 }
             ]
@@ -311,73 +304,73 @@
             "name": "Lucknow Super Giants",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "KL Rahul",
+                    "description": "Heavy hitter and consistent batter",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1125.png",
+                    "role": "batsman",
+                    "captain": true
+                },
+                {
+                    "name": "Manan Vohra",
+                    "description": "Good batter who is experienced",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1085.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Quinton de Kock",
+                    "description": "Mr. consistent who is well settled as an opener",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/834.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Ayush Badoni",
+                    "description": "The youngster was brought on board by LSG for INR 20 Lac during the TATA IPL 2022 auction.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20586.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Deepak Hooda",
+                    "description": "Experienced bowling all rounder",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1556.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Krishnappa Gowtham",
+                    "description": "Growing all rounder",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3834.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Karan Sharma",
+                    "description": "Good all rounder for the team",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20588.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Krunal Pandya",
+                    "description": "Aggressive left hand batter with decent bowling",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3183.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Kyle Mayers",
+                    "description": "Aggressive batter and good bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20587.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
-                    "captain": false
-                },
-                {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Marcus Stoinis",
+                    "description": "Heavy hitter and good bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/964.png",
+                    "role": "allRounder",
                     "captain": false
                 }
             ]
@@ -386,73 +379,73 @@
             "name": "Mumbai Indians",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Rohit Sharma",
+                    "description": "Good hitter of the ball and is well experienced",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/107.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Dewald Brevis",
+                    "description": "Time and again Mumbai Indians have shown faith in youngsters and Dewald Bravis is one such example of their investment.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20593.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Suryakumar Yadav",
+                    "description": "One hell of a hitter, some say he plays better than ABD",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/108.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Ishan Kishan",
+                    "description": "Good hitter of the ball and is a capped T20 player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/2975.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Arjun Tendulkar",
+                    "description": "Son of the great Sachin Tendulkar",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/10244.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Hrithik Shokeen",
+                    "description": "Young player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20598.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Mohd. Arshad Khan",
+                    "description": "Young player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20599.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "N. Tilak Varma",
+                    "description": "The elegant left-hand batsman from Hyderabad has played 4 first-class games, 16 List A games and 15 T20 games.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20594.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Jasprit Bumrah",
+                    "description": "The best Indian bowler with the best economy",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1124.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Tim David",
+                    "description": "When you attract bids from as many as six IPL franchises on a mega auction day, you got to be special. Born in Singapore, David is amongst the most exciting prospects in world cricket.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/4524.png",
+                    "role": "batsman",
                     "captain": false
                 }
             ]
@@ -461,73 +454,73 @@
             "name": "Punjab Kings",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Shikhar Dhawan",
+                    "description": "Well experienced player who plays for team India as a T20 opener",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/41.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Bhanuka Rajapaksa",
+                    "description": "The Sri Lanka left-handed batter was brought on board for INR 50 Lac. Bhanuka Rajapaksa is known for his ability to strike big with the bat and PBKS will want him to live up to that reputation.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20604.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Jitesh Sharma",
+                    "description": "The Vidarbha wicketkeeper-batter has thus far played 54 T20s and scored 1329 runs with the strike rate of 141.83. He was bought by the PBKS for INR 20 Lac.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3185.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Jonny Bairstow",
+                    "description": "Power hitter of the ball, and is very much consistent with opening th e batiing innings",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/506.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Prabhsimran Singh",
+                    "description": "Prabhsimran Singh - the Patiala-based wicketkeeper-batsman – continued his stint with Punjab Kings after being bought for INR 60 Lac during the TATA IPL 2022 auction.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/5436.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Atharva Taide",
+                    "description": "The young Vidarbha cricketer will join the PBKS unit after being bought for INR 20 Lac. Taide has so far played 8 First Class games, 19 List A matches and 20 T20s and has put on a handful of impressive performances.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/20603.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Shahrukh Khan",
+                    "description": "Shahrukh Khan was part of the victorious Tamil Nadu team which won the Syed Mushtaq Ali Trophy 2020-21 and 2021-22.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/7779.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Arshdeep Singh",
+                    "description": "Good bowler who recently played for India and picked many wickets",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/4698.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Kagiso Rabada",
+                    "description": "Best pace bowler who is consistent with his length",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1664.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Rahul Chahar",
+                    "description": "Young talented spin bowler who has played for India and former Mumbai Indians player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3763.png",
+                    "role": "bowler",
                     "captain": false
                 }
             ]
@@ -536,73 +529,73 @@
             "name": "Rajasthan Royal",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Sanju Samson",
+                    "description": "Sanju Samson came into reckoning with his gritty knocks for Rajasthan Royals in his debut season for the franchise. The wicketkeeper-batsman from Kerala was groomed by Rahul Dravid into a tough campaigner",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/258.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Devdutt Padikkal",
+                    "description": "Born in Edapal, Kerala, Devdutt Padikkal represents Karnataka in domestic cricket. A product of the system, Padikkal has risen through the ranks; he represented India Under-19 and soon after earned a call-up to the Karnataka Ranji Trophy side. ",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/5430.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Jos Buttler",
+                    "description": "The swashbuckling wicketkeeper-batsman will be out to make an impact as RR hope to utilise his international experience to guide them and end their long run for a second title. The right-hander had scored 328 runs in the IPL 2020.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/509.png",
+                    "role": "wicketKeeperBatsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Shimron Hetmyer",
+                    "description": "Power hitter and West Indies player",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/1705.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Yashasvi Jaiswal",
+                    "description": "Young and budding batsman, clean hitter of the ball",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/13538.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Ravichandran Ashwin",
+                    "description": "Well experienced, spin bowler and reliable lower order batter",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/8.png",
+                    "role": "allRounder",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Riyan Parag",
+                    "description": "Good player, hard hitter of the ball",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/4445.png",
+                    "role": "batsman",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Navdeep Saini",
+                    "description": "Good bowler with nice pace in him",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/3824.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Prasidh Krishna",
+                    "description": "Young and budding reliable bowler",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/5105.png",
+                    "role": "bowler",
                     "captain": false
                 },
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
+                    "name": "Yuzvendra Chahal",
+                    "description": "Funny and good bowler for India and RR",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/111.png",
+                    "role": "bowler",
                     "captain": false
                 }
             ]
@@ -611,11 +604,11 @@
             "name": "Royal Challengers Bangalore",
             "players": [
                 {
-                    "name": "",
-                    "description": "",
-                    "imageURL": "",
-                    "role": "",
-                    "captain": false
+                    "name": "Faf du Plessis",
+                    "description": "On March 12, 2022 the former RCB Skipper, Virat Kohli announced that he would be passing on the baton tow Faf du Plessis, who will be the new Captain for the RCB.",
+                    "imageURL": "https://assets.iplt20.com/ipl/IPLHeadshot2022/24.png",
+                    "role": "batsman",
+                    "captain": true
                 },
                 {
                     "name": "",

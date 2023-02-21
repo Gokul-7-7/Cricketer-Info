@@ -17,6 +17,12 @@
 		5553D3E529A1FF0900468EC4 /* TeamPlayerData.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5553D3E429A1FF0900468EC4 /* TeamPlayerData.geojson */; };
 		555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61DE2998283700798FAB /* ImageViewExtension.swift */; };
 		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
+		5594AE2729A5331B00475B9D /* TeamDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2629A5331B00475B9D /* TeamDataManager.swift */; };
+		5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */; };
+		5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2A29A5371600475B9D /* TeamResponse.swift */; };
+		5594AE2D29A5373600475B9D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2C29A5373600475B9D /* Team.swift */; };
+		5594AE2F29A5374F00475B9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2E29A5374F00475B9D /* Player.swift */; };
+		5594AE3129A5378900475B9D /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE3029A5378900475B9D /* Role.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
 		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
@@ -39,6 +45,12 @@
 		5553D3E429A1FF0900468EC4 /* TeamPlayerData.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TeamPlayerData.geojson; sourceTree = "<group>"; };
 		555F61DE2998283700798FAB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
+		5594AE2629A5331B00475B9D /* TeamDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManager.swift; sourceTree = "<group>"; };
+		5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManagerDelegate.swift; sourceTree = "<group>"; };
+		5594AE2A29A5371600475B9D /* TeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResponse.swift; sourceTree = "<group>"; };
+		5594AE2C29A5373600475B9D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		5594AE2E29A5374F00475B9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5594AE3029A5378900475B9D /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +108,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		5594AE2529A532CA00475B9D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */,
+				5594AE2629A5331B00475B9D /* TeamDataManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		55C1C73C29940F5D00A8DD86 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +145,7 @@
 		55F303E9298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXGroup;
 			children = (
+				5594AE2529A532CA00475B9D /* Networking */,
 				5553D3DF29A1289400468EC4 /* TeamData.json */,
 				5553D3DE29A1286900468EC4 /* Data */,
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
@@ -164,6 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				55F30400298644EC00CECF18 /* PlayerInfoModel.swift */,
+				5594AE2A29A5371600475B9D /* TeamResponse.swift */,
+				5594AE2C29A5373600475B9D /* Team.swift */,
+				5594AE2E29A5374F00475B9D /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +198,7 @@
 			children = (
 				55F3040929864BD200CECF18 /* RoleType.swift */,
 				55652E66298AA55800532EA9 /* TeamName.swift */,
+				5594AE3029A5378900475B9D /* Role.swift */,
 				55486870298F0CD8009F03F5 /* Player Data */,
 			);
 			path = Constants;
@@ -257,13 +283,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5594AE2729A5331B00475B9D /* TeamDataManager.swift in Sources */,
+				5594AE3129A5378900475B9D /* Role.swift in Sources */,
 				55652E67298AA55800532EA9 /* TeamName.swift in Sources */,
 				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
+				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
 				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
 				5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */,
+				5594AE2D29A5373600475B9D /* Team.swift in Sources */,
+				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
 				555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */,
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
 				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
@@ -273,6 +304,7 @@
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
 				5553D3E029A1289400468EC4 /* TeamData.json in Sources */,
+				5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
