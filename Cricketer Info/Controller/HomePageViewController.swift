@@ -7,6 +7,8 @@
 
 import UIKit
 
+///Properties belong to an object, whereas variables do not. A variable can be declared without having to be associated with a particular class, or other object. A property must be associated with a particular object (i.e.: a class, enum, or struct)
+
 class HomePageViewController: UIViewController {
     ///Lazy properties can be helpful in UI element creation in Swift because they allow you to delay the creation of the element until it's actually needed. This can improve app performance and reduce memory usage, especially if the UI element is complex or resource-intensive.
     ///For example, suppose you have a view controller that needs to display an image view, but the image itself isn't loaded until later in the view controller's lifecycle. You can declare the image view as a lazy property, so it's only created when it's actually needed

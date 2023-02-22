@@ -31,11 +31,17 @@ final class TeamDataManager {
 ///            When writing Swift code, favor this structure over the NSURLRequest and NSMutableURLRequest classes.
 ///            Certain header fields are reserved; see Reserved HTTP Headers.
             var request = URLRequest(url: url)
+            
             /// default http method is GET
             /// The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other verbs, too, but are utilized less frequently.
-            request.httpMethod = "GET"
+           // request.httpMethod = "GET"
             
             let session = URLSession(configuration: .default)
+///            The URLSession class and related classes provide an API for downloading data from and uploading data to endpoints indicated by URLs. Your app can also use this API to perform background downloads when your app isn’t running or, in iOS, while your app is suspended. You can use the related URLSessionDelegate and URLSessionTaskDelegate to support authentication and receive events like redirection and task completion.
+///            Note
+///            The URLSession API involves many different classes that work together in a fairly complex way which may not be obvious if you read the reference documentation by itself. Before using the API, read the overview in the URL Loading System topic. The articles in the Essentials, Uploading, and Downloading sections offer examples of performing common tasks with URLSession.
+///            Your app creates one or more URLSession instances, each of which coordinates a group of related data-transfer tasks. For example, if you’re creating a web browser, your app might create one session per tab or window, or one session for interactive use and another for background downloads. Within each session, your app adds a series of tasks, each of which represents a request for a specific URL (following HTTP redirects, if necessary).
+            
             let task = session.dataTask(with: request) { [weak self] (data, response, error) in
                 if error != nil {
                     print(error!)
