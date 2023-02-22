@@ -17,9 +17,24 @@ final class TeamDataManager {
     }
     
     func performRequest(with urlString: String) {
+        ///convert url string to URL type
         if let url = URL(string: urlString) {
+            
+///            A URL load request that is independent of protocol or URL scheme.
+///           Declaration
+///
+///           struct URLRequest
+///           Discussion
+///
+///           URLRequest encapsulates two essential properties of a load request: the URL to load and the policies used to load it. In addition, for HTTP and HTTPS requests, URLRequest includes the HTTP method (GET, POST, and so on) and the HTTP headers.
+///            URLRequest only represents information about the request. Use other classes, such as URLSession, to send the request to a server. See Fetching Website Data into Memory and Uploading Data to a Website for an introduction to these techniques.
+///            When writing Swift code, favor this structure over the NSURLRequest and NSMutableURLRequest classes.
+///            Certain header fields are reserved; see Reserved HTTP Headers.
             var request = URLRequest(url: url)
+            /// default http method is GET
+            /// The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other verbs, too, but are utilized less frequently.
             request.httpMethod = "GET"
+            
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: request) { [weak self] (data, response, error) in
                 if error != nil {

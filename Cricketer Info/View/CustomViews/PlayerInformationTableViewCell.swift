@@ -104,11 +104,11 @@ class PlayerInformationTableViewCell: UITableViewCell {
         } else {
             playerImageView.isHidden = true
         }
-        nameLabel.text = data.name ?? "-"
+        nameLabel.text = data.name
         if isCaptain ?? false {
-            roleLabel.text = "Captain ◎ \(data.role?.rawValue ?? "-")"
+            roleLabel.text = "Captain ◎ \(data.role.rawValue ?? "-")"
         } else {
-            roleLabel.text =  data.role?.rawValue ?? "-"
+            roleLabel.text =  data.role.rawValue ?? "-"
         }
     }
 }

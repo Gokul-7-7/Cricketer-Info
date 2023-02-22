@@ -54,7 +54,7 @@ class PlayerDetailViewController: UIViewController {
             playerImageView.isHidden = true
         }
         playerNameLabel.text = playerData?.name ?? "-"
-        let role = playerData?.role?.roleText ?? "-"
+        let role = playerData?.role.roleText ?? "-"
         if isCaptain ?? false {
             playerRoleLabel.text = "Captain ◎ \(role)"
         } else {

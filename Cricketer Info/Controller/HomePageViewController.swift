@@ -25,6 +25,9 @@ class HomePageViewController: UIViewController {
     private var filteredTeam: [PlayerInfoModel]?
     private let cellId = "cellID"
     
+    private let teamDataManager = TeamDataManager()
+    private var teamResponse: TeamResponse?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         jsonLoader()
@@ -83,17 +86,7 @@ class HomePageViewController: UIViewController {
 
     
     func setupTeamData() {
-        setupChennaiSuperKingsData()
-        setupGujratTitansData()
-        setupDelhiCapitalsData()
-        seupKolkataKnightRidersData()
-        seupLucknowSuperGiantsData()
-        seupMumbaiIndiansData()
-        seupPunjabKingsData()
-        seupRajasthanRoyalsData()
-        seupRoyalChallengersBangaloreData()
-        setupSunrisersHyderabadData()
-        selectedTeam = teamNames[0]
+        teamDataManager.fetchTeamData()
     }
     
     func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> PlayerInfoModel? {
@@ -172,5 +165,13 @@ extension HomePageViewController: UITableViewDelegate {
         }
         let coordinator = MainCoordinator(navigationController: navigationController ?? UINavigationController())
         coordinator.showPlayerDetail(playerData: playerData, isCaptain: indexPath.row == 0 && playerData.team != .sunrisersHyderabad)
+    }
+}
+
+extension HomePageViewController: TeamDataManagerDelegate {
+    func didUpdateTeamData(teamData: TeamResponse) {
+        DispatchQueue.main.async {
+            self.teamResponse = teamData
+        }
     }
 }
