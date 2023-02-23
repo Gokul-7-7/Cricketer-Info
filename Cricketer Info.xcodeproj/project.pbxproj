@@ -101,13 +101,13 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		55C1C73C29940F5D00A8DD86 /* Extension */ = {
+		55C1C73C29940F5D00A8DD86 /* Views+Extension */ = {
 			isa = PBXGroup;
 			children = (
 				55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */,
 				555F61DE2998283700798FAB /* ImageViewExtension.swift */,
 			);
-			path = Extension;
+			path = "Views+Extension";
 			sourceTree = "<group>";
 		};
 		55DE695929A75C5F009521EF /* HomePageViewController */ = {
@@ -133,6 +133,15 @@
 			path = PlayerDetailViewController;
 			sourceTree = "<group>";
 		};
+		55DE696E29A77C48009521EF /* ViewController+Views */ = {
+			isa = PBXGroup;
+			children = (
+				55DE696529A75EBF009521EF /* PlayerDetailViews.swift */,
+				55DE696729A76024009521EF /* HomePageViews.swift */,
+			);
+			path = "ViewController+Views";
+			sourceTree = "<group>";
+		};
 		55F303DE298643A400CECF18 = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +163,8 @@
 			children = (
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
 				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
-				55F3040B29864BD700CECF18 /* Constants */,
 				5553D3C0299EA6F100468EC4 /* Coordinator */,
+				55F3040B29864BD700CECF18 /* Constants */,
 				5594AE2529A532CA00475B9D /* Networking */,
 				55F30404298644FD00CECF18 /* Model */,
 				55F303FF2986440B00CECF18 /* View */,
@@ -179,10 +188,9 @@
 		55F303FF2986440B00CECF18 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73C29940F5D00A8DD86 /* Extension */,
-				55F3040C29864C5C00CECF18 /* CustomViews */,
-				55DE696529A75EBF009521EF /* PlayerDetailViews.swift */,
-				55DE696729A76024009521EF /* HomePageViews.swift */,
+				55DE696E29A77C48009521EF /* ViewController+Views */,
+				55C1C73C29940F5D00A8DD86 /* Views+Extension */,
+				55F3040C29864C5C00CECF18 /* CustomTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,14 +214,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		55F3040C29864C5C00CECF18 /* CustomViews */ = {
+		55F3040C29864C5C00CECF18 /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */,
 				55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */,
+				55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */,
 				55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */,
 			);
-			path = CustomViews;
+			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

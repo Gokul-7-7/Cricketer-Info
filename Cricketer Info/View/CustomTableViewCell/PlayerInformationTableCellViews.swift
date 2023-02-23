@@ -10,7 +10,6 @@ import UIKit
 class PlayerInformationTableCellViews {
     lazy var containerView: UIView = {
         var view = UIView()
-        view.backgroundColor = .white
         return view
     }()
     
