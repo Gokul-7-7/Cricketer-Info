@@ -13,13 +13,11 @@
 		5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */; };
 		5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */; };
 		555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61DE2998283700798FAB /* ImageViewExtension.swift */; };
-		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
 		5594AE2729A5331B00475B9D /* TeamDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2629A5331B00475B9D /* TeamDataManager.swift */; };
 		5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */; };
 		5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2A29A5371600475B9D /* TeamResponse.swift */; };
 		5594AE2D29A5373600475B9D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2C29A5373600475B9D /* Team.swift */; };
 		5594AE2F29A5374F00475B9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2E29A5374F00475B9D /* Player.swift */; };
-		5594AE3129A5378900475B9D /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE3029A5378900475B9D /* Role.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
 		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
 		55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */; };
@@ -45,13 +43,11 @@
 		5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		555F61DE2998283700798FAB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
-		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
 		5594AE2629A5331B00475B9D /* TeamDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManager.swift; sourceTree = "<group>"; };
 		5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManagerDelegate.swift; sourceTree = "<group>"; };
 		5594AE2A29A5371600475B9D /* TeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResponse.swift; sourceTree = "<group>"; };
 		5594AE2C29A5373600475B9D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		5594AE2E29A5374F00475B9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		5594AE3029A5378900475B9D /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDataSource.swift"; sourceTree = "<group>"; };
@@ -164,7 +160,6 @@
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
 				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
 				5553D3C0299EA6F100468EC4 /* Coordinator */,
-				55F3040B29864BD700CECF18 /* Constants */,
 				5594AE2529A532CA00475B9D /* Networking */,
 				55F30404298644FD00CECF18 /* Model */,
 				55F303FF2986440B00CECF18 /* View */,
@@ -205,20 +200,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		55F3040B29864BD700CECF18 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				55652E66298AA55800532EA9 /* TeamName.swift */,
-				5594AE3029A5378900475B9D /* Role.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		55F3040C29864C5C00CECF18 /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */,
 				55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */,
+				55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */,
 				55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */,
 			);
 			path = CustomTableViewCell;
@@ -295,8 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5594AE2729A5331B00475B9D /* TeamDataManager.swift in Sources */,
-				5594AE3129A5378900475B9D /* Role.swift in Sources */,
-				55652E67298AA55800532EA9 /* TeamName.swift in Sources */,
 				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
 				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
