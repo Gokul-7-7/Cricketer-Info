@@ -10,6 +10,7 @@ import UIKit
 ///Properties belong to an object, whereas variables do not. A variable can be declared without having to be associated with a particular class, or other object. A property must be associated with a particular object (i.e.: a class, enum, or struct)
 
 class HomePageViewController: UIViewController {
+    ///Instance that holds all the views for HomePage
     let homePageViews = HomePageViews()
     var selectedTeam: String?
     let cellId = "cellID"
@@ -34,8 +35,7 @@ class HomePageViewController: UIViewController {
         homePageViews.activityIndicator.startAnimating()
         homePageViews.teamPickerView.isHidden = true
         teamDataManager.fetchTeamData()
-        selectedTeamId = 0
-        selectedTeam = teamResponse?.teams[0].name
+        
     }
     
     func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> Player? {

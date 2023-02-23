@@ -15,6 +15,8 @@ extension HomePageViewController: TeamDataManagerDelegate {
             self.homePageViews.listTableView.reloadData()
             self.homePageViews.activityIndicator.stopAnimating()
             self.homePageViews.teamPickerView.isHidden = false
+            self.selectedTeamId = self.teamResponse?.teams[0].id
+            self.selectedTeam = self.teamResponse?.teams[0].name
         }
     }
 }
