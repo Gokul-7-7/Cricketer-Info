@@ -8,6 +8,9 @@
 import Foundation
 
 struct Team: Codable {
+    let id: Int
     let name: String
     let players: [Player]
 }
+///Properties here can be optional to avoid nil exceptions
+///Have properites as nil, if we are not sure if the property will have a value inside it or not

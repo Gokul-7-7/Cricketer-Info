@@ -21,71 +21,25 @@ class HomePageViewController: UIViewController {
     }()
     lazy var teamPickerView = UIPickerView()
     
-    var allPlayerData: [PlayerInfoModel]? = []
-    var teamNames: [TeamName] = []
-    private var selectedTeam: TeamName?
-    private var filteredTeam: [PlayerInfoModel]?
+    private var selectedTeam: String?
     private let cellId = "cellID"
+    private var selectedTeamId: Int?
     
     private let teamDataManager = TeamDataManager()
     private var teamResponse: TeamResponse?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        jsonLoader()
-        listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
+        teamDataManager.delegate = self
         setupTeamData()
+        listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
         setupUI()
         setDelegateAndDataSource()
-        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
     }
-    
-    func jsonLoader() {
-        let fileName = "TeamPlayerData"
-        let fileType = "geojson"
-        
-        if let path = Bundle.main.url(forResource: fileName, withExtension: fileType) {
-            do {
-                //let data = try Data(contentsOf: URL(filePath: path), options: .mappedIfSafe)
-                //let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                print(path)
-            } catch {
-                print("Couldn't load data from JSON")
-            }
-        } else {
-            print("abc")
-        }
-        
-    }
-    
-    func loadJSONFromFile() {
-        // Get the file path for the JSON file
-        guard let filePath = Bundle.main.path(forResource: "TeamData", ofType: "json") else {
-            print("Error: JSON file not found")
-            return
-        }
-        
-        do {
-            // Load the contents of the JSON file into a Data object
-            let data = try Data(contentsOf: URL(fileURLWithPath: filePath))
-            
-            // Parse the JSON data into an array of dictionaries
-            let jsonArray = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
-            
-            // Check if parsing was successful
-            guard let teams = jsonArray else {
-                print("Error: Failed to parse JSON data")
-                return
-            }
-            
-            // Use the teams array as needed
-            print("Loaded teams:", teams)
-            
-        } catch {
-            print("Error: Failed to load or parse JSON file:", error.localizedDescription)
-        }
-    }
-
     
     func setupTeamData() {
         teamDataManager.fetchTeamData()
@@ -93,8 +47,7 @@ class HomePageViewController: UIViewController {
     
     func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> PlayerInfoModel? {
         filteredTeam?.removeAll()
-        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        guard let filteredTeam = filteredTeam, indexPath.row < filteredTeam.count else {
+        guard let teamResponse = teamResponse, let playerData = teamResponse.teams[indexPath.row]., indexPath.row < filteredTeam.count else {
             return nil
         }
         let playerData = filteredTeam[indexPath.row]
@@ -110,7 +63,7 @@ extension HomePageViewController: UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return teamNames.count
+        return teamResponse?.teams.count ?? 0
     }
 }
 
@@ -118,16 +71,12 @@ extension HomePageViewController: UIPickerViewDataSource {
 extension HomePageViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return teamNames[row].rawValue
+        return teamResponse?.teams[row].name
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        filteredTeam?.removeAll()
-        selectedTeam = teamNames[row]
-        filteredTeam = allPlayerData?.filter { $0.team == selectedTeam }
-        listTableView.backgroundColor = teamNames[row].color
-        listTableView.scrollsToTop = true
-        listTableView.reloadData()
+        selectedTeam = teamResponse?.teams[row].name
+        
     }
 }
 
@@ -135,21 +84,23 @@ extension HomePageViewController: UIPickerViewDelegate {
 extension HomePageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredTeam?.count ?? 0
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? PlayerInformationTableViewCell else {
             return UITableViewCell()
         }
-        let bgColor = selectedTeam?.color
-        listTableView.backgroundColor = bgColor
-        cell.backgroundColor = bgColor
         cell.selectionStyle = .none
         
-        if let playerData = getPlayerDataForCurrentIndexPath(indexPath) {
-            cell.setupViewWith(data: playerData)
-        }
+//        let bgColor = selectedTeam?.color
+//        listTableView.backgroundColor = bgColor
+//        cell.backgroundColor = bgColor
+//        cell.selectionStyle = .none
+//
+//        if let playerData = getPlayerDataForCurrentIndexPath(indexPath) {
+//            cell.setupViewWith(data: playerData)
+//        }
         return cell
     }
 }
@@ -174,6 +125,8 @@ extension HomePageViewController: TeamDataManagerDelegate {
     func didUpdateTeamData(teamData: TeamResponse) {
         DispatchQueue.main.async {
             self.teamResponse = teamData
+            self.teamPickerView.reloadAllComponents()
+            self.listTableView.reloadData()
         }
     }
 }
