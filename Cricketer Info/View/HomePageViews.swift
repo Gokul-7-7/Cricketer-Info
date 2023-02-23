@@ -12,7 +12,7 @@ import UIKit
 class HomePageViews {
     lazy var listTableView: UITableView = {
         var tableView = UITableView()
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .singleLine
         tableView.showsVerticalScrollIndicator = true
         tableView.showsHorizontalScrollIndicator = true
         return tableView

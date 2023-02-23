@@ -29,6 +29,8 @@
 		55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */; };
 		55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696529A75EBF009521EF /* PlayerDetailViews.swift */; };
 		55DE696829A76024009521EF /* HomePageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696729A76024009521EF /* HomePageViews.swift */; };
+		55DE696B29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */; };
+		55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TeamManagerDelegate.swift"; sourceTree = "<group>"; };
 		55DE696529A75EBF009521EF /* PlayerDetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViews.swift; sourceTree = "<group>"; };
 		55DE696729A76024009521EF /* HomePageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViews.swift; sourceTree = "<group>"; };
+		55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerInformationTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
+		55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableCellViews.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */,
+				55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */,
+				55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -288,12 +294,14 @@
 				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
 				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
 				55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */,
+				55DE696B29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift in Sources */,
 				55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
 				55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */,
 				5594AE2D29A5373600475B9D /* Team.swift in Sources */,
+				55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */,
 				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
 				55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */,
 				555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */,
