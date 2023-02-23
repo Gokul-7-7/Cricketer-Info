@@ -31,7 +31,6 @@ class HomePageViewController: UIViewController {
         homePageViews.activityIndicator.startAnimating()
         homePageViews.teamPickerView.isHidden = true
         teamDataManager.fetchTeamData()
-        
     }
     
     func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> Player? {
