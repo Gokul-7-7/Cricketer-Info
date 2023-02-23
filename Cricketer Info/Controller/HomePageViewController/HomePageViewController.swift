@@ -19,10 +19,6 @@ class HomePageViewController: UIViewController {
     private let teamDataManager = TeamDataManager()
     var teamResponse: TeamResponse?
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         teamDataManager.delegate = self
