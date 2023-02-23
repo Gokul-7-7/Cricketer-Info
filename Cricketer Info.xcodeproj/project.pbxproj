@@ -88,13 +88,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		5553D3C5299F2CBC00468EC4 /* Constraints */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constraints;
-			sourceTree = "<group>";
-		};
 		5594AE2529A532CA00475B9D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +168,6 @@
 			children = (
 				55DE695929A75C5F009521EF /* HomePageViewController */,
 				55DE695A29A75C6F009521EF /* PlayerDetailViewController */,
-				5553D3C5299F2CBC00468EC4 /* Constraints */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
