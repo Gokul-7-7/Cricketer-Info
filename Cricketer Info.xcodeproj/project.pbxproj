@@ -22,6 +22,13 @@
 		5594AE3129A5378900475B9D /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE3029A5378900475B9D /* Role.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
 		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
+		55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */; };
+		55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */; };
+		55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */; };
+		55DE696229A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */; };
+		55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */; };
+		55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696529A75EBF009521EF /* PlayerDetailViews.swift */; };
+		55DE696829A76024009521EF /* HomePageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696729A76024009521EF /* HomePageViews.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
@@ -45,6 +52,13 @@
 		5594AE3029A5378900475B9D /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDataSource.swift"; sourceTree = "<group>"; };
+		55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
+		55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TeamManagerDelegate.swift"; sourceTree = "<group>"; };
+		55DE696529A75EBF009521EF /* PlayerDetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViews.swift; sourceTree = "<group>"; };
+		55DE696729A76024009521EF /* HomePageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViews.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +91,6 @@
 		5553D3C5299F2CBC00468EC4 /* Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
-				5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
@@ -99,6 +111,29 @@
 				555F61DE2998283700798FAB /* ImageViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		55DE695929A75C5F009521EF /* HomePageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
+				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
+				55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */,
+				55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */,
+				55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */,
+				55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */,
+				55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */,
+			);
+			path = HomePageViewController;
+			sourceTree = "<group>";
+		};
+		55DE695A29A75C6F009521EF /* PlayerDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
+				5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */,
+			);
+			path = PlayerDetailViewController;
 			sourceTree = "<group>";
 		};
 		55F303DE298643A400CECF18 = {
@@ -138,8 +173,8 @@
 		55F303FE298643FF00CECF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
-				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
+				55DE695929A75C5F009521EF /* HomePageViewController */,
+				55DE695A29A75C6F009521EF /* PlayerDetailViewController */,
 				5553D3C5299F2CBC00468EC4 /* Constraints */,
 			);
 			path = Controller;
@@ -150,6 +185,8 @@
 			children = (
 				55C1C73C29940F5D00A8DD86 /* Extension */,
 				55F3040C29864C5C00CECF18 /* CustomViews */,
+				55DE696529A75EBF009521EF /* PlayerDetailViews.swift */,
+				55DE696729A76024009521EF /* HomePageViews.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,12 +295,19 @@
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
 				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
 				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
+				55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */,
+				55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
+				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
+				55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */,
 				5594AE2D29A5373600475B9D /* Team.swift in Sources */,
 				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
+				55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */,
 				555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */,
+				55DE696229A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift in Sources */,
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
+				55DE696829A76024009521EF /* HomePageViews.swift in Sources */,
 				5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */,
 				5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
