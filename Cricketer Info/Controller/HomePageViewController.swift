@@ -20,9 +20,10 @@ class HomePageViewController: UIViewController {
         return tableView
     }()
     lazy var teamPickerView = UIPickerView()
+    lazy var activityIndicator = UIActivityIndicatorView()
     
     private var selectedTeam: String?
-    private let cellId = "cellID"
+    let cellId = "cellID"
     private var selectedTeamId: Int?
     
     private let teamDataManager = TeamDataManager()
@@ -35,22 +36,24 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         teamDataManager.delegate = self
-        setupTeamData()
-        listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
-        setupUI()
         setDelegateAndDataSource()
+        setupTeamData()
+        setupUI()
     }
     
     func setupTeamData() {
+        activityIndicator.startAnimating()
+        teamPickerView.isHidden = true
         teamDataManager.fetchTeamData()
+        selectedTeamId = 0
+        selectedTeam = teamResponse?.teams[0].name
     }
     
-    func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> PlayerInfoModel? {
-        filteredTeam?.removeAll()
-        guard let teamResponse = teamResponse, let playerData = teamResponse.teams[indexPath.row]., indexPath.row < filteredTeam.count else {
+    func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> Player? {
+        guard let teamResponse = teamResponse, let selectedTeamId = selectedTeamId else {
             return nil
         }
-        let playerData = filteredTeam[indexPath.row]
+        let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
         return playerData
     }
 }
@@ -76,7 +79,8 @@ extension HomePageViewController: UIPickerViewDelegate {
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedTeam = teamResponse?.teams[row].name
-        
+        selectedTeamId = teamResponse?.teams[row].id
+        listTableView.reloadData()
     }
 }
 
@@ -84,23 +88,17 @@ extension HomePageViewController: UIPickerViewDelegate {
 extension HomePageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return teamResponse?.teams[selectedTeamId ?? 0].players.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? PlayerInformationTableViewCell else {
             return UITableViewCell()
         }
+        if let playerData = getPlayerDataForCurrentIndexPath(indexPath) {
+            cell.setupViewWith(data: playerData)
+        }
         cell.selectionStyle = .none
-        
-//        let bgColor = selectedTeam?.color
-//        listTableView.backgroundColor = bgColor
-//        cell.backgroundColor = bgColor
-//        cell.selectionStyle = .none
-//
-//        if let playerData = getPlayerDataForCurrentIndexPath(indexPath) {
-//            cell.setupViewWith(data: playerData)
-//        }
         return cell
     }
 }
@@ -113,11 +111,12 @@ extension HomePageViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let playerData = filteredTeam?[indexPath.row] else {
+        guard let teamResponse = teamResponse, let selectedTeamId = selectedTeamId else {
             return
         }
+        let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
         let coordinator = MainCoordinator(navigationController: navigationController ?? UINavigationController())
-        coordinator.showPlayerDetail(playerData: playerData, isCaptain: indexPath.row == 0 && playerData.team != .sunrisersHyderabad)
+        coordinator.showPlayerDetail(playerData: playerData)
     }
 }
 
@@ -127,6 +126,8 @@ extension HomePageViewController: TeamDataManagerDelegate {
             self.teamResponse = teamData
             self.teamPickerView.reloadAllComponents()
             self.listTableView.reloadData()
+            self.activityIndicator.stopAnimating()
+            self.teamPickerView.isHidden = false
         }
     }
 }

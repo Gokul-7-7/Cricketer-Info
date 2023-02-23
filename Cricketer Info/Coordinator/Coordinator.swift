@@ -10,7 +10,7 @@ import UIKit
 
 protocol Coordinator: AnyObject {
     var navigationController: UINavigationController { get set }
-    func showPlayerDetail(playerData: PlayerInfoModel, isCaptain: Bool)
+    func showPlayerDetail(playerData: Player)
 }
 
 ///AnyObject - The protocol to which all class types implicitly conform.

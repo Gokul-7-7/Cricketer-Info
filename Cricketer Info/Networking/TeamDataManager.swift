@@ -8,7 +8,7 @@
 import Foundation
 
 final class TeamDataManager {
-    let productURL = "https://2024d5d1-7b75-4dc5-a0bd-c28f7e3cf05d.mock.pstmn.io"
+    let productURL = "https://5b0944cf-0eb6-40f6-8a9d-e7f413002852.mock.pstmn.io"
     var delegate: TeamDataManagerDelegate?
 
     func fetchTeamData() {
@@ -30,7 +30,7 @@ final class TeamDataManager {
 ///            URLRequest only represents information about the request. Use other classes, such as URLSession, to send the request to a server. See Fetching Website Data into Memory and Uploading Data to a Website for an introduction to these techniques.
 ///            When writing Swift code, favor this structure over the NSURLRequest and NSMutableURLRequest classes.
 ///            Certain header fields are reserved; see Reserved HTTP Headers.
-            var request = URLRequest(url: url)
+            let request = URLRequest(url: url)
             
             /// default http method is GET
             /// The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other verbs, too, but are utilized less frequently.

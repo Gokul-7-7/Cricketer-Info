@@ -15,6 +15,7 @@ extension HomePageViewController {
     }
     
     func setupUI() {
+        listTableView.register(PlayerInformationTableViewCell.self, forCellReuseIdentifier: cellId)
         title = "Team Info"
         view.backgroundColor = .white
         setupConstraints()
@@ -22,7 +23,15 @@ extension HomePageViewController {
     
     func setupConstraints() {
         setupPickerViewConstraint()
-        setupTableView()
+        setupTableViewConstraints()
+        setupActivityIndicatorConstraints()
+    }
+    
+    func setupActivityIndicatorConstraints() {
+        view.addSubview(activityIndicator)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     func setupPickerViewConstraint() {
@@ -30,7 +39,7 @@ extension HomePageViewController {
         teamPickerView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: 100, enableInsets: false)
     }
     
-    func setupTableView() {
+    func setupTableViewConstraints() {
         view.addSubview(listTableView)
         listTableView.anchor(top: teamPickerView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: nil, height: nil, enableInsets: false)
     }

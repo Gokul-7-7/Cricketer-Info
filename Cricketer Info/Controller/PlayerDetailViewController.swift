@@ -36,26 +36,26 @@ class PlayerDetailViewController: UIViewController {
         return textView
     }()
     
-    var playerData: PlayerInfoModel?
-    var isCaptain: Bool?
+    var playerData: Player?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupConstraints()
+        setupNavigationBar()
         setupViewWithData()
         setupNavigationBar()
     }
     
     func setupViewWithData() {
-        if let imageURL = URL(string: playerData?.image  ?? "") {
+        if let imageURL = URL(string: playerData?.imageURL ?? "") {
             playerImageView.load(url: imageURL)
         } else {
             playerImageView.isHidden = true
         }
         playerNameLabel.text = playerData?.name ?? "-"
-        let role = playerData?.role.roleText ?? "-"
-        if isCaptain ?? false {
+        let role = playerData?.role.getDisplayTextAsEmojis
+        if let role = playerData?.role.getDisplayTextAsEmojis, playerData?.captain ?? false {
             playerRoleLabel.text = "Captain ◎ \(role)"
         } else {
             playerRoleLabel.text = role

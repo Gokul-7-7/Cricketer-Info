@@ -26,7 +26,6 @@
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
 		55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F5298643A500CECF18 /* LaunchScreen.storyboard */; };
-		55F3040A29864BD200CECF18 /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040929864BD200CECF18 /* RoleType.swift */; };
 		55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		55F303F3298643A500CECF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F303F6298643A500CECF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F303F8298643A500CECF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55F3040929864BD200CECF18 /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
 		55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,13 +81,6 @@
 				5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */,
 			);
 			path = Constraints;
-			sourceTree = "<group>";
-		};
-		5553D3DE29A1286900468EC4 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		5594AE2529A532CA00475B9D /* Networking */ = {
@@ -129,15 +120,14 @@
 		55F303E9298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXGroup;
 			children = (
-				5594AE2529A532CA00475B9D /* Networking */,
-				5553D3DE29A1286900468EC4 /* Data */,
 				55F303EA298643A400CECF18 /* AppDelegate.swift */,
 				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
 				55F3040B29864BD700CECF18 /* Constants */,
 				5553D3C0299EA6F100468EC4 /* Coordinator */,
+				5594AE2529A532CA00475B9D /* Networking */,
 				55F30404298644FD00CECF18 /* Model */,
-				55F303FE298643FF00CECF18 /* Controller */,
 				55F303FF2986440B00CECF18 /* View */,
+				55F303FE298643FF00CECF18 /* Controller */,
 				55F303F3298643A500CECF18 /* Assets.xcassets */,
 				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 				55F303F8298643A500CECF18 /* Info.plist */,
@@ -177,7 +167,6 @@
 		55F3040B29864BD700CECF18 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				55F3040929864BD200CECF18 /* RoleType.swift */,
 				55652E66298AA55800532EA9 /* TeamName.swift */,
 				5594AE3029A5378900475B9D /* Role.swift */,
 			);
@@ -275,7 +264,6 @@
 				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
 				555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */,
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
-				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
 				5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */,
 				5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,

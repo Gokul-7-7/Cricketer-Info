@@ -20,7 +20,7 @@ extension PlayerDetailViewController {
     }
     
     func setupNavigationBar() {
-        navigationController?.title = "Player Detail"
+        title = "Player Detail"
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         navigationController?.navigationBar.topItem?.backBarButtonItem = backButton

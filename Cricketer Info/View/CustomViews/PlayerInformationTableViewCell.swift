@@ -98,17 +98,17 @@ class PlayerInformationTableViewCell: UITableViewCell {
         roleLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8).isActive = true
     }
     
-    func setupViewWith(data: PlayerInfoModel) {
-        if let imageURL = URL(string: data.image  ?? "") {
+    func setupViewWith(data: Player) {
+        if let imageURL = URL(string: data.imageURL) {
             playerImageView.load(url: imageURL)
         } else {
             playerImageView.isHidden = true
         }
         nameLabel.text = data.name
         if isCaptain ?? false {
-            roleLabel.text = "Captain ◎ \(data.role.rawValue ?? "-")"
+            roleLabel.text = "Captain ◎ \(data.role.rawValue)"
         } else {
-            roleLabel.text =  data.role.rawValue ?? "-"
+            roleLabel.text =  data.role.getDisplayTextAsEmojis
         }
     }
 }

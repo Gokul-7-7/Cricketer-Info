@@ -21,10 +21,9 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(homepageVC, animated: false)
     }
     
-    func showPlayerDetail(playerData: PlayerInfoModel, isCaptain: Bool) {
+    func showPlayerDetail(playerData: Player) {
         let detailVC = PlayerDetailViewController()
         detailVC.playerData = playerData
-        detailVC.isCaptain = isCaptain
         navigationController.pushViewController(detailVC, animated: true)
     }
     //other navigations
