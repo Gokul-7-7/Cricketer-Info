@@ -15,15 +15,9 @@ class PlayerInformationTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func configureView() {
-        setupConstraints()
-        playerInformationTableCellViews.containerView.clipsToBounds = true
-        playerInformationTableCellViews.containerView.layer.cornerRadius = 5
     }
         
     func setupViewWith(data: Player) {

@@ -9,6 +9,12 @@ import Foundation
 
 extension PlayerInformationTableViewCell {
     
+    func configureView() {
+        setupConstraints()
+        playerInformationTableCellViews.containerView.clipsToBounds = true
+        playerInformationTableCellViews.containerView.layer.cornerRadius = 5
+    }
+    
     func setupConstraints() {
         setupContainerViewConstraints()
         setupPlayerImageViewConstraints()
