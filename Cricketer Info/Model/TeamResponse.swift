@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct TeamResponse: Codable {
+struct TeamResponse: Decodable {
     let teams: [Team]
 }

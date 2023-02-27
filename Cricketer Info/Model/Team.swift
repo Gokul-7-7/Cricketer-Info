@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Team: Codable {
+struct Team: Decodable {
     let id: Int
     let name: String
     let players: [Player]

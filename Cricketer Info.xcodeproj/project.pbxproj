@@ -29,12 +29,24 @@
 		55DE696829A76024009521EF /* HomePageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696729A76024009521EF /* HomePageViews.swift */; };
 		55DE696B29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */; };
 		55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */; };
+		55DE697029A77E8C009521EF /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696F29A77E8C009521EF /* Role.swift */; };
+		55DE697F29A8B31E009521EF /* Cricketer_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
 		55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F5298643A500CECF18 /* LaunchScreen.storyboard */; };
 		55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55DE698029A8B31E009521EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F303DF298643A400CECF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F303E6298643A400CECF18;
+			remoteInfo = "Cricketer Info";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +71,9 @@
 		55DE696729A76024009521EF /* HomePageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViews.swift; sourceTree = "<group>"; };
 		55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerInformationTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
 		55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableCellViews.swift; sourceTree = "<group>"; };
+		55DE696F29A77E8C009521EF /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cricketer InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cricketer_InfoTests.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +84,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		55DE697929A8B31D009521EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F303E4298643A400CECF18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,10 +160,19 @@
 			path = "ViewController+Views";
 			sourceTree = "<group>";
 		};
+		55DE697D29A8B31E009521EF /* Cricketer InfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */,
+			);
+			path = "Cricketer InfoTests";
+			sourceTree = "<group>";
+		};
 		55F303DE298643A400CECF18 = {
 			isa = PBXGroup;
 			children = (
 				55F303E9298643A400CECF18 /* Cricketer Info */,
+				55DE697D29A8B31E009521EF /* Cricketer InfoTests */,
 				55F303E8298643A400CECF18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				55F303E7298643A400CECF18 /* Cricketer Info.app */,
+				55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +228,7 @@
 				5594AE2A29A5371600475B9D /* TeamResponse.swift */,
 				5594AE2C29A5373600475B9D /* Team.swift */,
 				5594AE2E29A5374F00475B9D /* Player.swift */,
+				55DE696F29A77E8C009521EF /* Role.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +246,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		55DE697B29A8B31D009521EF /* Cricketer InfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55DE698229A8B31E009521EF /* Build configuration list for PBXNativeTarget "Cricketer InfoTests" */;
+			buildPhases = (
+				55DE697829A8B31D009521EF /* Sources */,
+				55DE697929A8B31D009521EF /* Frameworks */,
+				55DE697A29A8B31D009521EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55DE698129A8B31E009521EF /* PBXTargetDependency */,
+			);
+			name = "Cricketer InfoTests";
+			productName = "Cricketer InfoTests";
+			productReference = 55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		55F303E6298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F303FB298643A500CECF18 /* Build configuration list for PBXNativeTarget "Cricketer Info" */;
@@ -240,6 +291,10 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					55DE697B29A8B31D009521EF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 55F303E6298643A400CECF18;
+					};
 					55F303E6298643A400CECF18 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -259,11 +314,19 @@
 			projectRoot = "";
 			targets = (
 				55F303E6298643A400CECF18 /* Cricketer Info */,
+				55DE697B29A8B31D009521EF /* Cricketer InfoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		55DE697A29A8B31D009521EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F303E5298643A400CECF18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +339,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55DE697829A8B31D009521EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DE697F29A8B31E009521EF /* Cricketer_InfoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F303E3298643A400CECF18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,12 +374,21 @@
 				5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */,
 				5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
+				55DE697029A77E8C009521EF /* Role.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
 				5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55DE698129A8B31E009521EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55F303E6298643A400CECF18 /* Cricketer Info */;
+			targetProxy = 55DE698029A8B31E009521EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55F303F5298643A500CECF18 /* LaunchScreen.storyboard */ = {
@@ -322,6 +402,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		55DE698329A8B31E009521EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6765H7YALU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gokulbvb.Cricketer-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cricketer Info.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cricketer Info";
+			};
+			name = Debug;
+		};
+		55DE698429A8B31E009521EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6765H7YALU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gokulbvb.Cricketer-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cricketer Info.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cricketer Info";
+			};
+			name = Release;
+		};
 		55F303F9298643A500CECF18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,6 +613,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		55DE698229A8B31E009521EF /* Build configuration list for PBXNativeTarget "Cricketer InfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DE698329A8B31E009521EF /* Debug */,
+				55DE698429A8B31E009521EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55F303E2298643A400CECF18 /* Build configuration list for PBXProject "Cricketer Info" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
