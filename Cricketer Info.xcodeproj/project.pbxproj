@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553C09F229ACE98800984CFD /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553C09F129ACE98800984CFD /* HomePageViewModel.swift */; };
 		55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */; };
 		5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */; };
 		5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C1299EA72D00468EC4 /* Coordinator.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		553C09F129ACE98800984CFD /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5553D3C1299EA72D00468EC4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553C09F029ACE96700984CFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				553C09F129ACE98800984CFD /* HomePageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5553D3C0299EA6F100468EC4 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 				5594AE2529A532CA00475B9D /* Networking */,
 				55F30404298644FD00CECF18 /* Model */,
 				55F303FF2986440B00CECF18 /* View */,
+				553C09F029ACE96700984CFD /* ViewModel */,
 				55F303FE298643FF00CECF18 /* Controller */,
 				55F303F3298643A500CECF18 /* Assets.xcassets */,
 				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
@@ -362,6 +373,7 @@
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
+				553C09F229ACE98800984CFD /* HomePageViewModel.swift in Sources */,
 				55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */,
 				5594AE2D29A5373600475B9D /* Team.swift in Sources */,
 				55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */,
