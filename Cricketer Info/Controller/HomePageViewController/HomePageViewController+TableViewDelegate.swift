@@ -1,9 +1,9 @@
 import UIKit
 
 extension HomePageViewController: UITableViewDelegate {
-    
+    ///Dynamic cell height can be used when the content inside the cell is of different size. With dynamic table view cell height, you can calculate the height of each cell based on the size of the content within it.
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return UITableView.automaticDimension
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
