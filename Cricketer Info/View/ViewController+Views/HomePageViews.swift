@@ -1,10 +1,3 @@
-//
-//  HomePageViews.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 23/02/23.
-//
-
 import UIKit
 
 ///Lazy properties can be helpful in UI element creation in Swift because they allow you to delay the creation of the element until it's actually needed. This can improve app performance and reduce memory usage, especially if the UI element is complex or resource-intensive.

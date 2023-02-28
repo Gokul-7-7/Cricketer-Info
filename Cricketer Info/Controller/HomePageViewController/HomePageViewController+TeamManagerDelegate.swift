@@ -1,10 +1,3 @@
-//
-//  HomePageViewController+TeamManagerDelegate.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 23/02/23.
-//
-
 import Foundation
 
 extension HomePageViewController: TeamDataManagerDelegate {

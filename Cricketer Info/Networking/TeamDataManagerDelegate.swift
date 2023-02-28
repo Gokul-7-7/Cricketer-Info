@@ -1,10 +1,3 @@
-//
-//  TeamDataManagerDelegate.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 21/02/23.
-//
-
 ///Any:
 ///Any can represent an instance of any (class, struct, enum) type at all, including function types. In simple language we can say that Any can deal with both reference type as well as value type object.
 

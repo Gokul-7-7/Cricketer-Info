@@ -1,10 +1,3 @@
-//
-//  PlayerDetailViewController.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 05/02/23.
-//
-
 import UIKit
 
 class PlayerDetailViewController: UIViewController {

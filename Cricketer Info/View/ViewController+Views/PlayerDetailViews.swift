@@ -1,10 +1,3 @@
-//
-//  PlayerDetailViews.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 23/02/23.
-//
-
 import UIKit
 
 class PlayerDetailViews {

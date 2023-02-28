@@ -1,16 +1,10 @@
-//
-//  FetchTeamData.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 21/02/23.
-//
-
 import Foundation
 
 final class TeamDataManager {
     let productURL = "https://5b0944cf-0eb6-40f6-8a9d-e7f413002852.mock.pstmn.io"
     var delegate: TeamDataManagerDelegate?
 
+    ///Completion handler can be used to send data
     func fetchTeamData() {
         let urlString = "\(productURL)"
         performRequest(with: urlString)

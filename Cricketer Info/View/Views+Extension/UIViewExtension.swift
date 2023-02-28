@@ -1,11 +1,3 @@
-//
-//  UIViewExtension.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 08/02/23.
-//
-
-import Foundation
 import UIKit
 
 extension UIView {

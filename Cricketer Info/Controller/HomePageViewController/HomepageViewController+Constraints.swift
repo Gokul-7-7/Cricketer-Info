@@ -1,10 +1,3 @@
-//
-//  HomepageViewController+Constraints.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 17/02/23.
-//
-
 extension HomePageViewController {
     
     func setDelegateAndDataSource() {

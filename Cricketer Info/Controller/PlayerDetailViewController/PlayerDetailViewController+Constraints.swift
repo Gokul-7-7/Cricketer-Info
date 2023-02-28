@@ -1,9 +1,3 @@
-//
-//  PlayerDetailViewController+Constraints.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 17/02/23.
-//
 ///UI kit is a framework provided by Apple in iOS development that allows developers to create user interfaces for their applications. Importing UI kit into a Swift project is necessary because it provides a set of pre-built components and tools that can be used to create visually appealing and interactive user interfaces.
 ///When you import UI kit into a Swift project, you gain access to a range of pre-built user interface components such as buttons, labels, text fields, and views. These components are designed to be easily customizable and can be used to build complex user interfaces.
 ///Additionally, UI kit provides a range of tools for handling user input, animations, and transitions, which can help improve the overall user experience of your application.

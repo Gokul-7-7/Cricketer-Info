@@ -1,10 +1,3 @@
-//
-//  HomePageViewModel.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 27/02/23.
-//
-
 import Foundation
 
 struct HomePageViewModel {
@@ -17,3 +10,6 @@ struct HomePageViewModel {
     
     
 }
+
+
+//Dependency Injection:

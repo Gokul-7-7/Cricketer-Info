@@ -1,10 +1,3 @@
-//
-//  HomePageViewController.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 05/02/23.
-//
-
 import UIKit
 
 ///Properties belong to an object, whereas variables do not. A variable can be declared without having to be associated with a particular class, or other object. A property must be associated with a particular object (i.e.: a class, enum, or struct)

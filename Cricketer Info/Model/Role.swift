@@ -1,10 +1,3 @@
-//
-//  Role.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 21/02/23.
-//
-
 ///Summary - Codable
 ///
 ///A type that can convert itself into and out of an external representation.
