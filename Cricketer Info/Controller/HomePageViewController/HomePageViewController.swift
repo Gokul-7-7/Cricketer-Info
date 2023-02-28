@@ -4,7 +4,7 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     ///Instance that holds all the views for HomePage
-    let homePageViews = HomePageViews()
+    lazy var homePageViews = HomePageViews()
     var selectedTeam: String?
     let cellId = "cellID"
     var selectedTeamId: Int?

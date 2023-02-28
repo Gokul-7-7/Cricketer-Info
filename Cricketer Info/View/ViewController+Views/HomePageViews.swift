@@ -10,6 +10,14 @@ class HomePageViews {
         tableView.showsHorizontalScrollIndicator = true
         return tableView
     }()
-    lazy var teamPickerView = UIPickerView()
-    lazy var activityIndicator = UIActivityIndicatorView()
+    
+    lazy var teamPickerView : UIPickerView = {
+        return UIPickerView()
+    }()
+    
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        return UIActivityIndicatorView()
+    }()
 }
+///why lazy properties should be a computed property?
+///Because lazy properties get assigned with values only when used, they need to be computed with the newest and up to date values.
