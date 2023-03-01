@@ -20,7 +20,7 @@ extension PlayerDetailViewController {
         navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
     
-    func setupPlayerImageViewConstraints() {
+    private func setupPlayerImageViewConstraints() {
         view.addSubview(playerViews.playerImageView)
         playerViews.playerImageView.translatesAutoresizingMaskIntoConstraints = false
         playerViews.playerImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
@@ -29,7 +29,7 @@ extension PlayerDetailViewController {
         playerViews.playerImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
-    func setupPlayerNameLabelConstraints() {
+    private func setupPlayerNameLabelConstraints() {
         view.addSubview(playerViews.playerNameLabel)
         playerViews.playerNameLabel.translatesAutoresizingMaskIntoConstraints = false
         playerViews.playerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
@@ -37,7 +37,7 @@ extension PlayerDetailViewController {
         playerViews.playerNameLabel.topAnchor.constraint(equalTo: playerViews.playerImageView.bottomAnchor, constant: 16).isActive = true
     }
     
-    func setupPlayerRoleLabelConstraints() {
+    private func setupPlayerRoleLabelConstraints() {
         view.addSubview(playerViews.playerRoleLabel)
         playerViews.playerRoleLabel.translatesAutoresizingMaskIntoConstraints = false
         playerViews.playerRoleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
@@ -45,7 +45,7 @@ extension PlayerDetailViewController {
         playerViews.playerRoleLabel.topAnchor.constraint(equalTo: playerViews.playerNameLabel.bottomAnchor, constant: 16).isActive = true
     }
     
-    func setupPlayerDescriptionTextViewConstraints() {
+    private func setupPlayerDescriptionTextViewConstraints() {
         view.addSubview(playerViews.playerDescriptionTextView)
         playerViews.playerDescriptionTextView.translatesAutoresizingMaskIntoConstraints = false
         playerViews.playerDescriptionTextView.topAnchor.constraint(equalTo: playerViews.playerRoleLabel.bottomAnchor, constant: 8).isActive = true
