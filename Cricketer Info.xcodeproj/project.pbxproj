@@ -32,6 +32,8 @@
 		55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */; };
 		55DE697029A77E8C009521EF /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696F29A77E8C009521EF /* Role.swift */; };
 		55DE697F29A8B31E009521EF /* Cricketer_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */; };
+		55F01A5C29B0D8E700B68872 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F01A5B29B0D8E700B68872 /* ApiManager.swift */; };
+		55F01A5E29B0EB3800B68872 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F01A5D29B0EB3800B68872 /* Constant.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 		55DE696F29A77E8C009521EF /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cricketer InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cricketer_InfoTests.swift; sourceTree = "<group>"; };
+		55F01A5B29B0D8E700B68872 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		55F01A5D29B0EB3800B68872 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,14 +107,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		553C09F029ACE96700984CFD /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				553C09F129ACE98800984CFD /* HomePageViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		5553D3C0299EA6F100468EC4 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +174,90 @@
 			path = "Cricketer InfoTests";
 			sourceTree = "<group>";
 		};
+		55F01A5029B0549100B68872 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				55F303EA298643A400CECF18 /* AppDelegate.swift */,
+				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		55F01A5129B054AF00B68872 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		55F01A5229B054C700B68872 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5D29B0EB3800B68872 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		55F01A5329B054E500B68872 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5B29B0D8E700B68872 /* ApiManager.swift */,
+				553C09F129ACE98800984CFD /* HomePageViewModel.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		55F01A5429B0551200B68872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55F303F3298643A500CECF18 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55F01A5629B0D7E200B68872 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5A29B0D83900B68872 /* HomePage */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		55F01A5729B0D7EB00B68872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55F01A5829B0D7EE00B68872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F01A5929B0D7F000B68872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5594AE2A29A5371600475B9D /* TeamResponse.swift */,
+				5594AE2C29A5373600475B9D /* Team.swift */,
+				5594AE2E29A5374F00475B9D /* Player.swift */,
+				55DE696F29A77E8C009521EF /* Role.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55F01A5A29B0D83900B68872 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5929B0D7F000B68872 /* Model */,
+				55F01A5829B0D7EE00B68872 /* View */,
+				55F01A5729B0D7EB00B68872 /* ViewModel */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		55F303DE298643A400CECF18 = {
 			isa = PBXGroup;
 			children = (
@@ -199,17 +279,18 @@
 		55F303E9298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXGroup;
 			children = (
-				55F303EA298643A400CECF18 /* AppDelegate.swift */,
-				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
+				55F01A5029B0549100B68872 /* Application */,
+				55F01A5229B054C700B68872 /* Constants */,
+				55F01A5129B054AF00B68872 /* Extensions */,
+				55F01A5329B054E500B68872 /* Helper */,
+				55F01A5429B0551200B68872 /* Resources */,
 				5553D3C0299EA6F100468EC4 /* Coordinator */,
 				5594AE2529A532CA00475B9D /* Networking */,
-				55F30404298644FD00CECF18 /* Model */,
 				55F303FF2986440B00CECF18 /* View */,
-				553C09F029ACE96700984CFD /* ViewModel */,
+				55F01A5629B0D7E200B68872 /* Screens */,
 				55F303FE298643FF00CECF18 /* Controller */,
-				55F303F3298643A500CECF18 /* Assets.xcassets */,
-				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 				55F303F8298643A500CECF18 /* Info.plist */,
+				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 			);
 			path = "Cricketer Info";
 			sourceTree = "<group>";
@@ -231,17 +312,6 @@
 				55F3040C29864C5C00CECF18 /* CustomTableViewCell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		55F30404298644FD00CECF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5594AE2A29A5371600475B9D /* TeamResponse.swift */,
-				5594AE2C29A5373600475B9D /* Team.swift */,
-				5594AE2E29A5374F00475B9D /* Player.swift */,
-				55DE696F29A77E8C009521EF /* Role.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		55F3040C29864C5C00CECF18 /* CustomTableViewCell */ = {
@@ -372,6 +442,7 @@
 				55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
+				55F01A5E29B0EB3800B68872 /* Constant.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
 				553C09F229ACE98800984CFD /* HomePageViewModel.swift in Sources */,
 				55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */,
@@ -386,6 +457,7 @@
 				5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */,
 				5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
+				55F01A5C29B0D8E700B68872 /* ApiManager.swift in Sources */,
 				55DE697029A77E8C009521EF /* Role.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
 				5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */,

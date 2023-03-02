@@ -1,8 +1,17 @@
 import Foundation
 
+///Why capture list?
+///When an object or value is getting referenced in an escaping closure it gets captured inside the scope for it to get used when the closure is executed.
+///When an object get's captured (here 'self') it creates a strong reference which will make it retain and cause memory leaks and storng reference cycles or retain cycles
+///Using [weak self] capture list, we capture self as a weak reference which will break our retain cycles
+///While using self, we retaining it for as long as the closure is in memory.
+///Using [weak self] is only required in situations where capturing self strongly would end up causing a retain cycle, for example when self is being captured within a closure that’s also ultimately retained by that same object.
+///
+
 extension HomePageViewController: TeamDataManagerDelegate {
     func didUpdateTeamData(teamData: TeamResponse) {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
             self.teamResponse = teamData
             self.homePageViews.teamPickerView.reloadAllComponents()
             self.homePageViews.listTableView.reloadData()
