@@ -137,13 +137,7 @@
 		55DE695929A75C5F009521EF /* HomePageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
-				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
-				55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */,
-				55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */,
-				55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */,
 				55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */,
-				55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */,
 			);
 			path = HomePageViewController;
 			sourceTree = "<group>";
@@ -233,6 +227,12 @@
 		55F01A5829B0D7EE00B68872 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
+				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
+				55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */,
+				55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */,
+				55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */,
+				55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

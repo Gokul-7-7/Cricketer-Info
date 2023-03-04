@@ -8,6 +8,7 @@ final class HomePageViewModel {
     var eventHandler: ((_ event: Event) -> ())?
     
     func fetchTeamResponse() {
+        eventHandler?(.loading)
         ApiManager.shared.fetchTeamData { response in
             switch response {
             case .success(let teamResponse):

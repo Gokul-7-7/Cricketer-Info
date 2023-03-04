@@ -9,11 +9,16 @@ class HomePageViewController: UIViewController {
     let cellId = "cellID"
     var selectedTeamId: Int?
     
+    private var viewModel = HomePageViewModel()
+    
     private let teamDataManager = TeamDataManager()
     var teamResponse: TeamResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configuration()
+        
         teamDataManager.delegate = self
         setDelegateAndDataSource()
         setupTeamData()
@@ -32,5 +37,19 @@ class HomePageViewController: UIViewController {
         }
         let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
         return playerData
+    }
+}
+
+extension HomePageViewController {
+    func configuration() {
+        initViewModel()
+        observeEvent()
+    }
+    func initViewModel() {
+        
+    }
+    ///This will observe event of Data binding - communication
+    func observeEvent() {
+        
     }
 }
