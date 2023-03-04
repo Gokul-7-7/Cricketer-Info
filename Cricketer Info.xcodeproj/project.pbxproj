@@ -16,7 +16,7 @@
 		5594AE2D29A5373600475B9D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2C29A5373600475B9D /* Team.swift */; };
 		5594AE2F29A5374F00475B9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2E29A5374F00475B9D /* Player.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
-		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
+		55C1C73E29940F7800A8DD86 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIView + Extension.swift */; };
 		55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */; };
 		55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */; };
 		55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */; };
@@ -37,7 +37,7 @@
 		55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F5298643A500CECF18 /* LaunchScreen.storyboard */; };
 		55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */; };
 		55F687D029B3CA760002271D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 55F687CF29B3CA760002271D /* Kingfisher */; };
-		55F687D229B3CA910002271D /* ImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F687D129B3CA910002271D /* ImageView + Extensions.swift */; };
+		55F687D229B3CA910002271D /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F687D129B3CA910002271D /* UIImageView + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 		5594AE2C29A5373600475B9D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		5594AE2E29A5374F00475B9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		55C1C73D29940F7800A8DD86 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDataSource.swift"; sourceTree = "<group>"; };
 		55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
 		55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		55F303F6298643A500CECF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F303F8298643A500CECF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableViewCell.swift; sourceTree = "<group>"; };
-		55F687D129B3CA910002271D /* ImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView + Extensions.swift"; sourceTree = "<group>"; };
+		55F687D129B3CA910002271D /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +121,6 @@
 			path = "Views+Extension";
 			sourceTree = "<group>";
 		};
-		55DE695929A75C5F009521EF /* HomePageViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomePageViewController;
-			sourceTree = "<group>";
-		};
 		55DE695A29A75C6F009521EF /* PlayerDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				55DE696529A75EBF009521EF /* PlayerDetailViews.swift */,
-				55DE696729A76024009521EF /* HomePageViews.swift */,
 			);
 			path = "ViewController+Views";
 			sourceTree = "<group>";
@@ -166,8 +158,8 @@
 		55F01A5129B054AF00B68872 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */,
-				55F687D129B3CA910002271D /* ImageView + Extensions.swift */,
+				55C1C73D29940F7800A8DD86 /* UIView + Extension.swift */,
+				55F687D129B3CA910002271D /* UIImageView + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +207,7 @@
 		55F01A5829B0D7EE00B68872 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55DE696729A76024009521EF /* HomePageViews.swift */,
 				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
 				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
 				55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */,
@@ -273,9 +266,9 @@
 				55F01A5229B054C700B68872 /* Constants */,
 				55F01A5129B054AF00B68872 /* Extensions */,
 				55F01A5329B054E500B68872 /* Helper */,
-				55F303FF2986440B00CECF18 /* View */,
 				55F01A5629B0D7E200B68872 /* Screens */,
 				55F303FE298643FF00CECF18 /* Controller */,
+				55F303FF2986440B00CECF18 /* View */,
 				55F01A5429B0551200B68872 /* Resources */,
 				55F303F8298643A500CECF18 /* Info.plist */,
 				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
@@ -286,7 +279,6 @@
 		55F303FE298643FF00CECF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55DE695929A75C5F009521EF /* HomePageViewController */,
 				55DE695A29A75C6F009521EF /* PlayerDetailViewController */,
 			);
 			path = Controller;
@@ -426,7 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
+				55C1C73E29940F7800A8DD86 /* UIView + Extension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
 				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
 				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
@@ -441,7 +433,7 @@
 				55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */,
 				5594AE2D29A5373600475B9D /* Team.swift in Sources */,
 				55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */,
-				55F687D229B3CA910002271D /* ImageView + Extensions.swift in Sources */,
+				55F687D229B3CA910002271D /* UIImageView + Extensions.swift in Sources */,
 				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
 				55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */,
 				55DE696229A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift in Sources */,

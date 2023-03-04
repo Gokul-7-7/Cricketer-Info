@@ -1,10 +1,3 @@
-//
-//  ImageView + Extensions.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 05/03/23.
-//
-
 import UIKit
 import Kingfisher
 

@@ -21,8 +21,8 @@ enum DataError: Error {
 typealias Handler = (Result<TeamResponse, DataError>) -> ()
 
 class ApiManager {
-    
     static let shared = ApiManager()
+    ///Object can be made only inside this class.
     private init() {}
     
     ///Result is a value that represents either a success or a failure
@@ -55,6 +55,7 @@ class ApiManager {
                 completion(.failure(.network(error)))
             }
         }.resume()
+        ///.resume() helps with entering the function even after exiting to call the completion. If not for .resume() the function won't be able to enter after exiting to access the completion.
     }
     
 }

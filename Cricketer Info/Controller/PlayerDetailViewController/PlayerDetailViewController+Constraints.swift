@@ -1,7 +1,4 @@
-///UI kit is a framework provided by Apple in iOS development that allows developers to create user interfaces for their applications. Importing UI kit into a Swift project is necessary because it provides a set of pre-built components and tools that can be used to create visually appealing and interactive user interfaces.
-///When you import UI kit into a Swift project, you gain access to a range of pre-built user interface components such as buttons, labels, text fields, and views. These components are designed to be easily customizable and can be used to build complex user interfaces.
-///Additionally, UI kit provides a range of tools for handling user input, animations, and transitions, which can help improve the overall user experience of your application.
-///Without importing UI kit, developers would need to build all the user interface components from scratch, which would be time-consuming and error-prone. Importing UI kit streamlines the process of creating user interfaces and helps ensure that the application is consistent with the design guidelines set by Apple.
+///UIKit consists of all the UI related pre-built components, UIkit also has Foundation imported which will also provide all the data types and other fundamental concepts
 import UIKit
 
 extension PlayerDetailViewController {

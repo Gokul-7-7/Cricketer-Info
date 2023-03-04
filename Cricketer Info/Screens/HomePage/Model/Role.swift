@@ -35,8 +35,7 @@ enum Role: String, Decodable {
     
     ///This is a computed property, because computed properties need a explicit type and the property doesn't have value initially but needs to run some code to calculate the value.
     var getDisplayTextAsEmojis: String {
-        ///Every switch statement must be exhaustive. That is, every possible value of the type being considered must be matched by one of the switch cases. If it’s not appropriate to provide a case for every possible value, you can define a default case to cover any values that aren’t addressed explicitly. This default case is indicated by the default keyword, and must always appear last.
-        ///A switch statement considers a value and compares it against several possible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully. A switch statement provides an alternative to the if statement for responding to multiple potential states.
+        ///Every switch statement must be exhaustive. That is, every possible value of the type must be matched by one of the switch cases.
         switch self {
         case .allRounder:
             return "🏏🎾"
