@@ -3,7 +3,7 @@ import UIKit
 extension HomePageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teamResponse?.teams[selectedTeamId ?? 0].players.count ?? 0
+        return viewModel.teamResponse?.teams[selectedTeamId ?? 0].players.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

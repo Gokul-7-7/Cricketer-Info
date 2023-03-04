@@ -10,20 +10,18 @@ class HomePageViewController: UIViewController {
     let cellId = "cellID"
     var selectedTeamId: Int?
     
-    private var viewModel = HomePageViewModel()
+    var viewModel = HomePageViewModel()
     
     //private let teamDataManager = TeamDataManager()
     var teamResponse: TeamResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
-        setDelegateAndDataSource()
         configuration()
     }
     
     func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> Player? {
-        guard let teamResponse = teamResponse, let selectedTeamId = selectedTeamId else {
+        guard let teamResponse = viewModel.teamResponse, let selectedTeamId = selectedTeamId else {
             return nil
         }
         let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
@@ -34,11 +32,14 @@ class HomePageViewController: UIViewController {
 extension HomePageViewController {
     func configuration() {
         initViewModel()
+        setupUI()
+        setDelegateAndDataSource()
         observeEvent()
     }
     func initViewModel() {
         viewModel.fetchTeamResponse()
     }
+    
     ///This will observe event of Data binding - communication
     func observeEvent() {
         viewModel.eventHandler = { [weak self]event in
@@ -55,7 +56,6 @@ extension HomePageViewController {
                 }
             case .dataLoaded:
                 DispatchQueue.main.async {
-                    self.teamResponse = self.viewModel.teamResponse
                     self.homePageViews.listTableView.reloadData()
                 }
             case .error(let error):

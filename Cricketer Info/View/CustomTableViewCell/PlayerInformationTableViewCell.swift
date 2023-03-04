@@ -1,7 +1,12 @@
 import UIKit
 
 class PlayerInformationTableViewCell: UITableViewCell {
-    
+    ///Property observers
+    var playerData: Player? {
+        didSet {
+            playerDetailConfiguration()
+        }
+    }
     let playerInformationTableCellViews = PlayerInformationTableCellViews()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -13,17 +18,14 @@ class PlayerInformationTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
         
-    func setupViewWith(data: Player) {
-        if let imageURL = URL(string: data.imageURL) {
-            playerInformationTableCellViews.playerImageView.load(url: imageURL)
+    func playerDetailConfiguration() {
+        guard let playerData else { return }
+        playerInformationTableCellViews.playerImageView.setImage(with: playerData.imageURL)
+        playerInformationTableCellViews.nameLabel.text = playerData.name
+        if playerData.captain == true {
+            playerInformationTableCellViews.roleLabel.text = "Captain ◎ \(playerData.role.getDisplayTextAsEmojis)"
         } else {
-            playerInformationTableCellViews.playerImageView.isHidden = true
-        }
-        playerInformationTableCellViews.nameLabel.text = data.name
-        if data.captain {
-            playerInformationTableCellViews.roleLabel.text = "Captain ◎ \(data.role.getDisplayTextAsEmojis)"
-        } else {
-            playerInformationTableCellViews.roleLabel.text =  data.role.getDisplayTextAsEmojis
+            playerInformationTableCellViews.roleLabel.text =  playerData.role.getDisplayTextAsEmojis
         }
     }
 }
