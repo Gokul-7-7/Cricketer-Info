@@ -7,6 +7,6 @@ extension HomePageViewController: UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return teamResponse?.teams.count ?? 0
+        return viewModel.teamResponse?.teams.count ?? 0
     }
 }

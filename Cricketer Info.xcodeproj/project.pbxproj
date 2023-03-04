@@ -12,9 +12,6 @@
 		5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C1299EA72D00468EC4 /* Coordinator.swift */; };
 		5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */; };
 		5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */; };
-		555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61DE2998283700798FAB /* ImageViewExtension.swift */; };
-		5594AE2729A5331B00475B9D /* TeamDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2629A5331B00475B9D /* TeamDataManager.swift */; };
-		5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */; };
 		5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2A29A5371600475B9D /* TeamResponse.swift */; };
 		5594AE2D29A5373600475B9D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2C29A5373600475B9D /* Team.swift */; };
 		5594AE2F29A5374F00475B9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2E29A5374F00475B9D /* Player.swift */; };
@@ -59,9 +56,6 @@
 		5553D3C1299EA72D00468EC4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailViewController+Constraints.swift"; sourceTree = "<group>"; };
-		555F61DE2998283700798FAB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
-		5594AE2629A5331B00475B9D /* TeamDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManager.swift; sourceTree = "<group>"; };
-		5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataManagerDelegate.swift; sourceTree = "<group>"; };
 		5594AE2A29A5371600475B9D /* TeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResponse.swift; sourceTree = "<group>"; };
 		5594AE2C29A5373600475B9D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		5594AE2E29A5374F00475B9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -120,20 +114,9 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		5594AE2529A532CA00475B9D /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				5594AE2829A5367600475B9D /* TeamDataManagerDelegate.swift */,
-				5594AE2629A5331B00475B9D /* TeamDataManager.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		55C1C73C29940F5D00A8DD86 /* Views+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */,
-				555F61DE2998283700798FAB /* ImageViewExtension.swift */,
 			);
 			path = "Views+Extension";
 			sourceTree = "<group>";
@@ -141,7 +124,6 @@
 		55DE695929A75C5F009521EF /* HomePageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */,
 			);
 			path = HomePageViewController;
 			sourceTree = "<group>";
@@ -184,6 +166,7 @@
 		55F01A5129B054AF00B68872 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */,
 				55F687D129B3CA910002271D /* ImageView + Extensions.swift */,
 			);
 			path = Extensions;
@@ -237,6 +220,7 @@
 				55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */,
 				55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */,
 				55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */,
+				55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */,
 				55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */,
 			);
 			path = View;
@@ -285,15 +269,14 @@
 			isa = PBXGroup;
 			children = (
 				55F01A5029B0549100B68872 /* Application */,
+				5553D3C0299EA6F100468EC4 /* Coordinator */,
 				55F01A5229B054C700B68872 /* Constants */,
 				55F01A5129B054AF00B68872 /* Extensions */,
 				55F01A5329B054E500B68872 /* Helper */,
-				55F01A5429B0551200B68872 /* Resources */,
-				5553D3C0299EA6F100468EC4 /* Coordinator */,
-				5594AE2529A532CA00475B9D /* Networking */,
 				55F303FF2986440B00CECF18 /* View */,
 				55F01A5629B0D7E200B68872 /* Screens */,
 				55F303FE298643FF00CECF18 /* Controller */,
+				55F01A5429B0551200B68872 /* Resources */,
 				55F303F8298643A500CECF18 /* Info.plist */,
 				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 			);
@@ -443,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5594AE2729A5331B00475B9D /* TeamDataManager.swift in Sources */,
 				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
 				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
@@ -462,7 +444,6 @@
 				55F687D229B3CA910002271D /* ImageView + Extensions.swift in Sources */,
 				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
 				55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */,
-				555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */,
 				55DE696229A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift in Sources */,
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
 				55DE696829A76024009521EF /* HomePageViews.swift in Sources */,
@@ -472,7 +453,6 @@
 				55F01A5C29B0D8E700B68872 /* ApiManager.swift in Sources */,
 				55DE697029A77E8C009521EF /* Role.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
-				5594AE2929A5367600475B9D /* TeamDataManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

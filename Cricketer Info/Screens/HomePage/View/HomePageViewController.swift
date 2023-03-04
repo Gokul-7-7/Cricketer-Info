@@ -32,9 +32,9 @@ class HomePageViewController: UIViewController {
 extension HomePageViewController {
     func configuration() {
         initViewModel()
+        observeEvent()
         setupUI()
         setDelegateAndDataSource()
-        observeEvent()
     }
     func initViewModel() {
         viewModel.fetchTeamResponse()
@@ -44,7 +44,8 @@ extension HomePageViewController {
     func observeEvent() {
         viewModel.eventHandler = { [weak self]event in
             guard let self else { return }
-            
+            ///Why UI related tasks in main thread?
+            ///Because all the data fetching happens in the background, the UI related tasks has to happen in the main thread.
             switch event {
             case .loading:
                 DispatchQueue.main.async {
@@ -56,10 +57,12 @@ extension HomePageViewController {
                 }
             case .dataLoaded:
                 DispatchQueue.main.async {
+                    self.reloadInputViews()
+                    self.homePageViews.teamPickerView.reloadAllComponents()
                     self.homePageViews.listTableView.reloadData()
                 }
             case .error(let error):
-                print(error)
+                print(error ?? "Error")
             }
         }
     }

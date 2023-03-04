@@ -11,7 +11,7 @@ extension HomePageViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         if let playerData = getPlayerDataForCurrentIndexPath(indexPath) {
-            cell.setupViewWith(data: playerData)
+            cell.playerData = playerData
         }
         cell.selectionStyle = .none
         return cell

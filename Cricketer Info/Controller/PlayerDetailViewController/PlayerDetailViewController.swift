@@ -15,19 +15,16 @@ class PlayerDetailViewController: UIViewController {
     }
     
     func setupViewWithData() {
-        if let imageURL = URL(string: playerData?.imageURL ?? "") {
-            playerViews.playerImageView.load(url: imageURL)
-        } else {
-            playerViews.playerImageView.isHidden = true
-        }
-        playerViews.playerNameLabel.text = playerData?.name ?? "-"
-        let role = playerData?.role.getDisplayTextAsEmojis
-        if let role = playerData?.role.getDisplayTextAsEmojis, playerData?.captain ?? false {
+        guard let playerData else { return }
+        playerViews.playerImageView.setImage(with: playerData.imageURL)
+        playerViews.playerNameLabel.text = playerData.name
+        let role = playerData.role.getDisplayTextAsEmojis
+        playerViews.playerDescriptionTextView.isUserInteractionEnabled = false
+        playerViews.playerDescriptionTextView.text = playerData.description
+        if playerData.captain {
             playerViews.playerRoleLabel.text = "Captain ◎ \(role)"
         } else {
             playerViews.playerRoleLabel.text = role
         }
-        playerViews.playerDescriptionTextView.isUserInteractionEnabled = false
-        playerViews.playerDescriptionTextView.text = playerData?.description ?? "-"
     }
 }

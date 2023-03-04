@@ -2,7 +2,6 @@
 import Foundation
 
 final class HomePageViewModel {
-    
     var teamResponse: TeamResponse?
     ///Data binding closure:
     ///data binding using closure method
@@ -24,7 +23,6 @@ final class HomePageViewModel {
 }
 
 extension HomePageViewModel {
-    
     enum Event {
         case loading
         case stopLoading

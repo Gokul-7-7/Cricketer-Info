@@ -7,7 +7,7 @@ extension HomePageViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let teamResponse = teamResponse, let selectedTeamId = selectedTeamId else {
+        guard let teamResponse = viewModel.teamResponse, let selectedTeamId = selectedTeamId else {
             return
         }
         let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
