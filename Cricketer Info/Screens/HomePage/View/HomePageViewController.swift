@@ -1,3 +1,4 @@
+///In mvvm view controllers should only have view logic
 import UIKit
 
 ///Properties belong to an object, whereas variables do not. A variable can be declared without having to be associated with a particular class, or other object. A property must be associated with a particular object (i.e.: a class, enum, or struct)
@@ -11,24 +12,14 @@ class HomePageViewController: UIViewController {
     
     private var viewModel = HomePageViewModel()
     
-    private let teamDataManager = TeamDataManager()
+    //private let teamDataManager = TeamDataManager()
     var teamResponse: TeamResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configuration()
-        
-        teamDataManager.delegate = self
-        setDelegateAndDataSource()
-        setupTeamData()
         setupUI()
-    }
-    
-    func setupTeamData() {
-        homePageViews.activityIndicator.startAnimating()
-        homePageViews.teamPickerView.isHidden = true
-        teamDataManager.fetchTeamData()
+        setDelegateAndDataSource()
+        configuration()
     }
     
     func getPlayerDataForCurrentIndexPath(_ indexPath: IndexPath) -> Player? {
@@ -46,10 +37,30 @@ extension HomePageViewController {
         observeEvent()
     }
     func initViewModel() {
-        
+        viewModel.fetchTeamResponse()
     }
     ///This will observe event of Data binding - communication
     func observeEvent() {
-        
+        viewModel.eventHandler = { [weak self]event in
+            guard let self else { return }
+            
+            switch event {
+            case .loading:
+                DispatchQueue.main.async {
+                    self.homePageViews.activityIndicator.startAnimating()
+                }
+            case .stopLoading:
+                DispatchQueue.main.async {
+                    self.homePageViews.activityIndicator.stopAnimating()
+                }
+            case .dataLoaded:
+                DispatchQueue.main.async {
+                    self.teamResponse = self.viewModel.teamResponse
+                    self.homePageViews.listTableView.reloadData()
+                }
+            case .error(let error):
+                print(error)
+            }
+        }
     }
 }

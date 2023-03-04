@@ -18,7 +18,7 @@ extension HomePageViewController: TeamDataManagerDelegate {
             self.homePageViews.activityIndicator.stopAnimating()
             self.homePageViews.teamPickerView.isHidden = false
             self.selectedTeamId = self.teamResponse?.teams[0].id
-            self.selectedTeam = self.teamResponse?.teams[0].name
+            self.selectedTeam = self.teamResponse?.teams[0].name 
         }
     }
    /* Closures in Swift are like functions, but they can capture and store references to any constants and variables from the surrounding context. When a closure captures a reference to a variable or constant, it captures a reference to the value at the time the closure is created, not the value at the time the closure is called.
