@@ -38,6 +38,7 @@
 		55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */; };
 		55F687D029B3CA760002271D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 55F687CF29B3CA760002271D /* Kingfisher */; };
 		55F687D229B3CA910002271D /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F687D129B3CA910002271D /* UIImageView + Extensions.swift */; };
+		55F687D429B46EC40002271D /* HomePageViewController + ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F687D329B46EC40002271D /* HomePageViewController + ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		55F303F8298643A500CECF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableViewCell.swift; sourceTree = "<group>"; };
 		55F687D129B3CA910002271D /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
+		55F687D329B46EC40002271D /* HomePageViewController + ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController + ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */,
 				55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */,
 				55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */,
+				55F687D329B46EC40002271D /* HomePageViewController + ViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */,
 				55DE696B29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift in Sources */,
 				55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */,
+				55F687D429B46EC40002271D /* HomePageViewController + ViewModel.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
 				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
 				55F01A5E29B0EB3800B68872 /* Constant.swift in Sources */,
