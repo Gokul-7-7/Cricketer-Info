@@ -7,67 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548686D298EF3C2009F03F5 /* AllPlayerData.swift */; };
 		55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */; };
 		5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */; };
 		5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C1299EA72D00468EC4 /* Coordinator.swift */; };
 		5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */; };
 		5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */; };
-		5553D3E029A1289400468EC4 /* TeamData.json in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3DF29A1289400468EC4 /* TeamData.json */; };
-		555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F61DE2998283700798FAB /* ImageViewExtension.swift */; };
-		55652E67298AA55800532EA9 /* TeamName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55652E66298AA55800532EA9 /* TeamName.swift */; };
+		5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2A29A5371600475B9D /* TeamResponse.swift */; };
+		5594AE2D29A5373600475B9D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2C29A5373600475B9D /* Team.swift */; };
+		5594AE2F29A5374F00475B9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2E29A5374F00475B9D /* Player.swift */; };
 		55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */; };
-		55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */; };
+		55C1C73E29940F7800A8DD86 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C73D29940F7800A8DD86 /* UIView + Extension.swift */; };
+		55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */; };
+		55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */; };
+		55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */; };
+		55DE696229A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */; };
+		55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */; };
+		55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696529A75EBF009521EF /* PlayerDetailViews.swift */; };
+		55DE696829A76024009521EF /* HomePageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696729A76024009521EF /* HomePageViews.swift */; };
+		55DE696B29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */; };
+		55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */; };
+		55DE697029A77E8C009521EF /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE696F29A77E8C009521EF /* Role.swift */; };
+		55DE697F29A8B31E009521EF /* Cricketer_InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */; };
+		55F01A5C29B0D8E700B68872 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F01A5B29B0D8E700B68872 /* ApiManager.swift */; };
+		55F01A5E29B0EB3800B68872 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F01A5D29B0EB3800B68872 /* Constant.swift */; };
+		55F01A6029B0FC4C00B68872 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F01A5F29B0FC4C00B68872 /* HomePageViewModel.swift */; };
 		55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EA298643A400CECF18 /* AppDelegate.swift */; };
 		55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F303EC298643A400CECF18 /* SceneDelegate.swift */; };
 		55F303F4298643A500CECF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F3298643A500CECF18 /* Assets.xcassets */; };
 		55F303F7298643A500CECF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F303F5298643A500CECF18 /* LaunchScreen.storyboard */; };
-		55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F30400298644EC00CECF18 /* PlayerInfoModel.swift */; };
-		55F3040A29864BD200CECF18 /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040929864BD200CECF18 /* RoleType.swift */; };
 		55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */; };
+		55F687D029B3CA760002271D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 55F687CF29B3CA760002271D /* Kingfisher */; };
+		55F687D229B3CA910002271D /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F687D129B3CA910002271D /* UIImageView + Extensions.swift */; };
+		55F687D429B46EC40002271D /* HomePageViewController + ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F687D329B46EC40002271D /* HomePageViewController + ViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55DE698029A8B31E009521EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F303DF298643A400CECF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F303E6298643A400CECF18;
+			remoteInfo = "Cricketer Info";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		5548686D298EF3C2009F03F5 /* AllPlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayerData.swift; sourceTree = "<group>"; };
 		55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5553D3C1299EA72D00468EC4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailViewController+Constraints.swift"; sourceTree = "<group>"; };
-		5553D3DF29A1289400468EC4 /* TeamData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = TeamData.json; path = "Cricketer Info/Data/TeamData.json"; sourceTree = SOURCE_ROOT; };
-		555F61DE2998283700798FAB /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
-		55652E66298AA55800532EA9 /* TeamName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamName.swift; sourceTree = "<group>"; };
+		5594AE2A29A5371600475B9D /* TeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResponse.swift; sourceTree = "<group>"; };
+		5594AE2C29A5373600475B9D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		5594AE2E29A5374F00475B9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		55C1C73D29940F7800A8DD86 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDataSource.swift"; sourceTree = "<group>"; };
+		55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+PickerViewDelegate.swift"; sourceTree = "<group>"; };
+		55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController+TeamManagerDelegate.swift"; sourceTree = "<group>"; };
+		55DE696529A75EBF009521EF /* PlayerDetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViews.swift; sourceTree = "<group>"; };
+		55DE696729A76024009521EF /* HomePageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViews.swift; sourceTree = "<group>"; };
+		55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerInformationTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
+		55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableCellViews.swift; sourceTree = "<group>"; };
+		55DE696F29A77E8C009521EF /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cricketer InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cricketer_InfoTests.swift; sourceTree = "<group>"; };
+		55F01A5B29B0D8E700B68872 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		55F01A5D29B0EB3800B68872 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		55F01A5F29B0FC4C00B68872 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		55F303E7298643A400CECF18 /* Cricketer Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricketer Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F303EA298643A400CECF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F303EC298643A400CECF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55F303F3298643A500CECF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F303F6298643A500CECF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F303F8298643A500CECF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55F30400298644EC00CECF18 /* PlayerInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoModel.swift; sourceTree = "<group>"; };
-		55F3040929864BD200CECF18 /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
 		55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationTableViewCell.swift; sourceTree = "<group>"; };
+		55F687D129B3CA910002271D /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
+		55F687D329B46EC40002271D /* HomePageViewController + ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePageViewController + ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		55F303E4298643A400CECF18 /* Frameworks */ = {
+		55DE697929A8B31D009521EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55F303E4298643A400CECF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F687D029B3CA760002271D /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55486870298F0CD8009F03F5 /* Player Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Player Data";
-			sourceTree = "<group>";
-		};
 		5553D3C0299EA6F100468EC4 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,37 +116,138 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		5553D3C5299F2CBC00468EC4 /* Constraints */ = {
+		55C1C73C29940F5D00A8DD86 /* Views+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
+			);
+			path = "Views+Extension";
+			sourceTree = "<group>";
+		};
+		55DE695A29A75C6F009521EF /* PlayerDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
 				5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */,
 			);
-			path = Constraints;
+			path = PlayerDetailViewController;
 			sourceTree = "<group>";
 		};
-		5553D3DE29A1286900468EC4 /* Data */ = {
+		55DE696E29A77C48009521EF /* ViewController+Views */ = {
 			isa = PBXGroup;
 			children = (
-				5548686D298EF3C2009F03F5 /* AllPlayerData.swift */,
-				5553D3DF29A1289400468EC4 /* TeamData.json */,
+				55DE696529A75EBF009521EF /* PlayerDetailViews.swift */,
 			);
-			path = Data;
+			path = "ViewController+Views";
 			sourceTree = "<group>";
 		};
-		55C1C73C29940F5D00A8DD86 /* Extension */ = {
+		55DE697D29A8B31E009521EF /* Cricketer InfoTests */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73D29940F7800A8DD86 /* UIViewExtension.swift */,
-				555F61DE2998283700798FAB /* ImageViewExtension.swift */,
+				55DE697E29A8B31E009521EF /* Cricketer_InfoTests.swift */,
 			);
-			path = Extension;
+			path = "Cricketer InfoTests";
+			sourceTree = "<group>";
+		};
+		55F01A5029B0549100B68872 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				55F303EA298643A400CECF18 /* AppDelegate.swift */,
+				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		55F01A5129B054AF00B68872 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55C1C73D29940F7800A8DD86 /* UIView + Extension.swift */,
+				55F687D129B3CA910002271D /* UIImageView + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		55F01A5229B054C700B68872 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5D29B0EB3800B68872 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		55F01A5329B054E500B68872 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5B29B0D8E700B68872 /* ApiManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		55F01A5429B0551200B68872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55F303F3298643A500CECF18 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55F01A5629B0D7E200B68872 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5A29B0D83900B68872 /* HomePage */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		55F01A5729B0D7EB00B68872 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5F29B0FC4C00B68872 /* HomePageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55F01A5829B0D7EE00B68872 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55DE696729A76024009521EF /* HomePageViews.swift */,
+				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
+				5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */,
+				55DE695B29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift */,
+				55DE695D29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift */,
+				55DE695F29A75D01009521EF /* HomePageViewController+TableViewDataSource.swift */,
+				55DE696129A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift */,
+				55DE696329A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift */,
+				55F687D329B46EC40002271D /* HomePageViewController + ViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F01A5929B0D7F000B68872 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5594AE2A29A5371600475B9D /* TeamResponse.swift */,
+				5594AE2C29A5373600475B9D /* Team.swift */,
+				5594AE2E29A5374F00475B9D /* Player.swift */,
+				55DE696F29A77E8C009521EF /* Role.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55F01A5A29B0D83900B68872 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				55F01A5929B0D7F000B68872 /* Model */,
+				55F01A5829B0D7EE00B68872 /* View */,
+				55F01A5729B0D7EB00B68872 /* ViewModel */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		55F303DE298643A400CECF18 = {
 			isa = PBXGroup;
 			children = (
 				55F303E9298643A400CECF18 /* Cricketer Info */,
+				55DE697D29A8B31E009521EF /* Cricketer InfoTests */,
 				55F303E8298643A400CECF18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				55F303E7298643A400CECF18 /* Cricketer Info.app */,
+				55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,17 +264,17 @@
 		55F303E9298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXGroup;
 			children = (
-				5553D3DE29A1286900468EC4 /* Data */,
-				55F303EA298643A400CECF18 /* AppDelegate.swift */,
-				55F303EC298643A400CECF18 /* SceneDelegate.swift */,
-				55F3040B29864BD700CECF18 /* Constants */,
+				55F01A5029B0549100B68872 /* Application */,
 				5553D3C0299EA6F100468EC4 /* Coordinator */,
-				55F30404298644FD00CECF18 /* Model */,
+				55F01A5229B054C700B68872 /* Constants */,
+				55F01A5129B054AF00B68872 /* Extensions */,
+				55F01A5329B054E500B68872 /* Helper */,
+				55F01A5629B0D7E200B68872 /* Screens */,
 				55F303FE298643FF00CECF18 /* Controller */,
 				55F303FF2986440B00CECF18 /* View */,
-				55F303F3298643A500CECF18 /* Assets.xcassets */,
-				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
+				55F01A5429B0551200B68872 /* Resources */,
 				55F303F8298643A500CECF18 /* Info.plist */,
+				55F303F5298643A500CECF18 /* LaunchScreen.storyboard */,
 			);
 			path = "Cricketer Info";
 			sourceTree = "<group>";
@@ -141,9 +282,7 @@
 		55F303FE298643FF00CECF18 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73A298FA62400A8DD86 /* HomePageViewController.swift */,
-				55486871298F0DBA009F03F5 /* PlayerDetailViewController.swift */,
-				5553D3C5299F2CBC00468EC4 /* Constraints */,
+				55DE695A29A75C6F009521EF /* PlayerDetailViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,41 +290,44 @@
 		55F303FF2986440B00CECF18 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				55C1C73C29940F5D00A8DD86 /* Extension */,
-				55F3040C29864C5C00CECF18 /* CustomViews */,
+				55DE696E29A77C48009521EF /* ViewController+Views */,
+				55C1C73C29940F5D00A8DD86 /* Views+Extension */,
+				55F3040C29864C5C00CECF18 /* CustomTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		55F30404298644FD00CECF18 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				55F30400298644EC00CECF18 /* PlayerInfoModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		55F3040B29864BD700CECF18 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				55F3040929864BD200CECF18 /* RoleType.swift */,
-				55652E66298AA55800532EA9 /* TeamName.swift */,
-				55486870298F0CD8009F03F5 /* Player Data */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		55F3040C29864C5C00CECF18 /* CustomViews */ = {
+		55F3040C29864C5C00CECF18 /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				55F3040D29864C9600CECF18 /* PlayerInformationTableViewCell.swift */,
+				55DE696C29A77536009521EF /* PlayerInformationTableCellViews.swift */,
+				55DE696A29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift */,
 			);
-			path = CustomViews;
+			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		55DE697B29A8B31D009521EF /* Cricketer InfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55DE698229A8B31E009521EF /* Build configuration list for PBXNativeTarget "Cricketer InfoTests" */;
+			buildPhases = (
+				55DE697829A8B31D009521EF /* Sources */,
+				55DE697929A8B31D009521EF /* Frameworks */,
+				55DE697A29A8B31D009521EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55DE698129A8B31E009521EF /* PBXTargetDependency */,
+			);
+			name = "Cricketer InfoTests";
+			productName = "Cricketer InfoTests";
+			productReference = 55DE697C29A8B31D009521EF /* Cricketer InfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		55F303E6298643A400CECF18 /* Cricketer Info */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F303FB298643A500CECF18 /* Build configuration list for PBXNativeTarget "Cricketer Info" */;
@@ -199,6 +341,9 @@
 			dependencies = (
 			);
 			name = "Cricketer Info";
+			packageProductDependencies = (
+				55F687CF29B3CA760002271D /* Kingfisher */,
+			);
 			productName = "Cricketer Info";
 			productReference = 55F303E7298643A400CECF18 /* Cricketer Info.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +358,10 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					55DE697B29A8B31D009521EF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 55F303E6298643A400CECF18;
+					};
 					55F303E6298643A400CECF18 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -227,16 +376,27 @@
 				Base,
 			);
 			mainGroup = 55F303DE298643A400CECF18;
+			packageReferences = (
+				55F687CE29B3CA760002271D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 55F303E8298643A400CECF18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				55F303E6298643A400CECF18 /* Cricketer Info */,
+				55DE697B29A8B31D009521EF /* Cricketer InfoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		55DE697A29A8B31D009521EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F303E5298643A400CECF18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,30 +409,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55DE697829A8B31D009521EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DE697F29A8B31E009521EF /* Cricketer_InfoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F303E3298643A400CECF18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55652E67298AA55800532EA9 /* TeamName.swift in Sources */,
-				55C1C73E29940F7800A8DD86 /* UIViewExtension.swift in Sources */,
+				55C1C73E29940F7800A8DD86 /* UIView + Extension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
+				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
 				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
+				55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */,
+				55DE696B29A77494009521EF /* PlayerInformationTableViewCell+Constraints.swift in Sources */,
+				55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */,
+				55F687D429B46EC40002271D /* HomePageViewController + ViewModel.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
+				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
+				55F01A5E29B0EB3800B68872 /* Constant.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,
-				5548686E298EF3C2009F03F5 /* AllPlayerData.swift in Sources */,
-				555F61DF2998283700798FAB /* ImageViewExtension.swift in Sources */,
+				55F01A6029B0FC4C00B68872 /* HomePageViewModel.swift in Sources */,
+				55DE695E29A75CE1009521EF /* HomePageViewController+PickerViewDelegate.swift in Sources */,
+				5594AE2D29A5373600475B9D /* Team.swift in Sources */,
+				55DE696D29A77536009521EF /* PlayerInformationTableCellViews.swift in Sources */,
+				55F687D229B3CA910002271D /* UIImageView + Extensions.swift in Sources */,
+				5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */,
+				55DE696029A75D01009521EF /* HomePageViewController+TableViewDataSource.swift in Sources */,
+				55DE696229A75D4E009521EF /* HomePageViewController+TableViewDelegate.swift in Sources */,
 				55486872298F0DBA009F03F5 /* PlayerDetailViewController.swift in Sources */,
-				55F3040A29864BD200CECF18 /* RoleType.swift in Sources */,
+				55DE696829A76024009521EF /* HomePageViews.swift in Sources */,
 				5553D3BF299E9E7A00468EC4 /* MainCoordinator.swift in Sources */,
 				5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */,
-				55F30401298644EC00CECF18 /* PlayerInfoModel.swift in Sources */,
 				55C1C73B298FA62400A8DD86 /* HomePageViewController.swift in Sources */,
+				55F01A5C29B0D8E700B68872 /* ApiManager.swift in Sources */,
+				55DE697029A77E8C009521EF /* Role.swift in Sources */,
 				55F303ED298643A400CECF18 /* SceneDelegate.swift in Sources */,
-				5553D3E029A1289400468EC4 /* TeamData.json in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55DE698129A8B31E009521EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55F303E6298643A400CECF18 /* Cricketer Info */;
+			targetProxy = 55DE698029A8B31E009521EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55F303F5298643A500CECF18 /* LaunchScreen.storyboard */ = {
@@ -286,6 +474,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		55DE698329A8B31E009521EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6765H7YALU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gokulbvb.Cricketer-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cricketer Info.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cricketer Info";
+			};
+			name = Debug;
+		};
+		55DE698429A8B31E009521EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6765H7YALU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gokulbvb.Cricketer-InfoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cricketer Info.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cricketer Info";
+			};
+			name = Release;
+		};
 		55F303F9298643A500CECF18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +685,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		55DE698229A8B31E009521EF /* Build configuration list for PBXNativeTarget "Cricketer InfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DE698329A8B31E009521EF /* Debug */,
+				55DE698429A8B31E009521EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55F303E2298643A400CECF18 /* Build configuration list for PBXProject "Cricketer Info" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -480,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55F687CE29B3CA760002271D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55F687CF29B3CA760002271D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55F687CE29B3CA760002271D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55F303DF298643A400CECF18 /* Project object */;
 }

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 29/01/23.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -13,9 +6,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var mainCoordinator: MainCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let navigationController = UINavigationController()
@@ -24,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-
+/// Understand each method here
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
@@ -56,3 +46,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+//scene(_:willConnectTo:options:)
+///This is the first method called in UISceneSession life cycle. This method will creates new UIWindow, sets the root view controller and makes this window the key window to be displayed.
+//sceneWillEnterForeground(_:)
+///This method is called when the scene is about to start like when app becomes active for the first time or when transitions from background to foreground.
+//sceneDidBecomeActive(_:)
+///This method is called right after the WillEnterForeground method and here the scene is set-up and visible and ready to use.
+//sceneWillResignActive(_:) and sceneDidEnterBackground(_:)
+///These methods are called when app stages to backgground .
+//sceneDidDisconnect(_:)
+///This is the interesting method of all the methods. When ever the scene is sent to background, iOS might decide to completely discard the scene to free up the resources. This doesn’t meant that the app is killed or not running, but just the scene is disconnected from the session and is not active. iOS can decide to reconnect back this scene to scene session when the user brings that particular scene to foreground again . This method can be used to discard any resources that aren’t used anymore.

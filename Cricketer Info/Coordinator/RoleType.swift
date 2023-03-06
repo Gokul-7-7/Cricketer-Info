@@ -13,7 +13,9 @@ enum RoleType: String {
     case bowler = "🎾"
     case wicketKeeperBatsman = "🧤🏏"
     
+    
     var roleText: String {
+        
         switch self {
         case .batsman:
             return "Batsman"
@@ -25,4 +27,5 @@ enum RoleType: String {
             return "Wicket Keeper Batsman"
         }
     }
+    
 }

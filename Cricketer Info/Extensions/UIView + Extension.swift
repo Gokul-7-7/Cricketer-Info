@@ -1,11 +1,3 @@
-//
-//  UIViewExtension.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 08/02/23.
-//
-
-import Foundation
 import UIKit
 
 extension UIView {
@@ -15,7 +7,7 @@ extension UIView {
         var bottomInset = CGFloat(0)
         
         if #available(iOS 11, *), enableInsets {
-            let insets = self.safeAreaInsets
+            let insets = safeAreaInsets
             topInset = insets.top
             bottomInset = insets.bottom
             print("Top: \(topInset)")
@@ -25,10 +17,10 @@ extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
         
         if let top = top {
-            self.topAnchor.constraint(equalTo: top, constant: paddingTop+topInset).isActive = true
+            topAnchor.constraint(equalTo: top, constant: paddingTop+topInset).isActive = true
         }
         if let leading = leading {
-            self.leadingAnchor.constraint(equalTo: leading, constant: paddingLeft).isActive = true
+            leadingAnchor.constraint(equalTo: leading, constant: paddingLeft).isActive = true
         }
         if let trailing = trailing {
             trailingAnchor.constraint(equalTo: trailing, constant: -paddingRight).isActive = true
