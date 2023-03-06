@@ -19,35 +19,21 @@ extension PlayerDetailViewController {
     
     private func setupPlayerImageViewConstraints() {
         view.addSubview(playerViews.playerImageView)
-        playerViews.playerImageView.translatesAutoresizingMaskIntoConstraints = false
-        playerViews.playerImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        playerViews.playerImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        playerViews.playerImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
-        playerViews.playerImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        playerViews.playerImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: nil, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 150, height: 150, enableInsets: false)
     }
     
     private func setupPlayerNameLabelConstraints() {
         view.addSubview(playerViews.playerNameLabel)
-        playerViews.playerNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        playerViews.playerNameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        playerViews.playerNameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        playerViews.playerNameLabel.topAnchor.constraint(equalTo: playerViews.playerImageView.bottomAnchor, constant: 16).isActive = true
+        playerViews.playerNameLabel.anchor(top: playerViews.playerImageView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: nil, height: nil, enableInsets: false)
     }
     
     private func setupPlayerRoleLabelConstraints() {
         view.addSubview(playerViews.playerRoleLabel)
-        playerViews.playerRoleLabel.translatesAutoresizingMaskIntoConstraints = false
-        playerViews.playerRoleLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        playerViews.playerRoleLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        playerViews.playerRoleLabel.topAnchor.constraint(equalTo: playerViews.playerNameLabel.bottomAnchor, constant: 16).isActive = true
+        playerViews.playerRoleLabel.anchor(top: playerViews.playerNameLabel.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: nil, height: nil, enableInsets: false)
     }
     
     private func setupPlayerDescriptionTextViewConstraints() {
         view.addSubview(playerViews.playerDescriptionTextView)
-        playerViews.playerDescriptionTextView.translatesAutoresizingMaskIntoConstraints = false
-        playerViews.playerDescriptionTextView.topAnchor.constraint(equalTo: playerViews.playerRoleLabel.bottomAnchor, constant: 8).isActive = true
-        playerViews.playerDescriptionTextView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        playerViews.playerDescriptionTextView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        playerViews.playerDescriptionTextView.bottomAnchor.constraint(greaterThanOrEqualTo: view.bottomAnchor, constant: 16).isActive = true
+        playerViews.playerDescriptionTextView.anchor(top: playerViews.playerRoleLabel.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 8, paddingLeft: 16, paddingBottom: 16, paddingRight: 16, width: nil, height: nil, enableInsets: false)
     }
 }
