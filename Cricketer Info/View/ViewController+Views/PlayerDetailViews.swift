@@ -2,7 +2,11 @@ import UIKit
 
 class PlayerDetailViews {
 
-    lazy var playerImageView: UIImageView = UIImageView()
+    lazy var playerImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
 
         lazy var playerNameLabel: UILabel = {
             let label = UILabel()

@@ -19,17 +19,18 @@ extension PlayerDetailViewController {
     
     private func setupPlayerImageViewConstraints() {
         view.addSubview(playerViews.playerImageView)
-        playerViews.playerImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: nil, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 150, height: 150, enableInsets: false)
+        playerViews.playerImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        playerViews.playerImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: nil, paddingTop: 16, paddingLeft: 50, paddingBottom: 50, paddingRight: 0, width: 150, height: 150, enableInsets: false)
     }
     
     private func setupPlayerNameLabelConstraints() {
         view.addSubview(playerViews.playerNameLabel)
-        playerViews.playerNameLabel.anchor(top: playerViews.playerImageView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: nil, height: nil, enableInsets: false)
+        playerViews.playerNameLabel.anchor(top: playerViews.playerImageView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 16, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: nil, height: nil, enableInsets: false)
     }
     
     private func setupPlayerRoleLabelConstraints() {
         view.addSubview(playerViews.playerRoleLabel)
-        playerViews.playerRoleLabel.anchor(top: playerViews.playerNameLabel.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: nil, height: nil, enableInsets: false)
+        playerViews.playerRoleLabel.anchor(top: playerViews.playerNameLabel.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, paddingTop: 16, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: nil, height: nil, enableInsets: false)
     }
     
     private func setupPlayerDescriptionTextViewConstraints() {
