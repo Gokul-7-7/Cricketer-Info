@@ -3,7 +3,8 @@ import UIKit
 class PlayerDetailViewController: UIViewController {
     
     let playerViews = PlayerDetailViews()
-    var playerData: Player?
+    private var playerData: Player?
+    let viewModel = PlayerDetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,6 +13,10 @@ class PlayerDetailViewController: UIViewController {
         setupNavigationBar()
         setupViewWithData()
         setupNavigationBar()
+    }
+    
+    func configure(with viewModel: PlayerDetailViewModel) {
+        self.playerData = viewModel.playerData
     }
     
     func setupViewWithData() {

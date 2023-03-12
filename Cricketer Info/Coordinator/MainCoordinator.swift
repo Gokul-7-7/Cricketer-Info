@@ -15,7 +15,7 @@ class MainCoordinator: Coordinator {
     
     func showPlayerDetail(playerData: Player) {
         let detailVC = PlayerDetailViewController()
-        detailVC.playerData = playerData
+        detailVC.configure(with: PlayerDetailViewModel(playerData: playerData))
         navigationController.pushViewController(detailVC, animated: true)
     }
     //other navigations
