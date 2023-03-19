@@ -13,6 +13,9 @@
 		5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */; };
 		5553D3C7299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */; };
 		556C681229BC62DD0074F21D /* PlayerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C681129BC62DD0074F21D /* PlayerDetailViewModel.swift */; };
+		55781B6029C6C9BA0073AF30 /* HomePageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55781B5F29C6C9BA0073AF30 /* HomePageCoordinator.swift */; };
+		55781B6429C6CC200073AF30 /* HomePageActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55781B6329C6CC200073AF30 /* HomePageActionHandler.swift */; };
+		55781B6A29C6D14F0073AF30 /* DetailPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55781B6929C6D14F0073AF30 /* DetailPageCoordinator.swift */; };
 		5594AE2B29A5371600475B9D /* TeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2A29A5371600475B9D /* TeamResponse.swift */; };
 		5594AE2D29A5373600475B9D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2C29A5373600475B9D /* Team.swift */; };
 		5594AE2F29A5374F00475B9D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594AE2E29A5374F00475B9D /* Player.swift */; };
@@ -59,6 +62,9 @@
 		5553D3C3299F2C3B00468EC4 /* HomepageViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomepageViewController+Constraints.swift"; sourceTree = "<group>"; };
 		5553D3C6299F2CF400468EC4 /* PlayerDetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		556C681129BC62DD0074F21D /* PlayerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewModel.swift; sourceTree = "<group>"; };
+		55781B5F29C6C9BA0073AF30 /* HomePageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCoordinator.swift; sourceTree = "<group>"; };
+		55781B6329C6CC200073AF30 /* HomePageActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageActionHandler.swift; sourceTree = "<group>"; };
+		55781B6929C6D14F0073AF30 /* DetailPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageCoordinator.swift; sourceTree = "<group>"; };
 		5594AE2A29A5371600475B9D /* TeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResponse.swift; sourceTree = "<group>"; };
 		5594AE2C29A5373600475B9D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		5594AE2E29A5374F00475B9D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -114,6 +120,30 @@
 			children = (
 				5553D3C1299EA72D00468EC4 /* Coordinator.swift */,
 				5553D3BE299E9E7A00468EC4 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		55781B6129C6C9C70073AF30 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				55781B5F29C6C9BA0073AF30 /* HomePageCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		55781B6229C6CC060073AF30 /* ActionHandler */ = {
+			isa = PBXGroup;
+			children = (
+				55781B6329C6CC200073AF30 /* HomePageActionHandler.swift */,
+			);
+			path = ActionHandler;
+			sourceTree = "<group>";
+		};
+		55781B6829C6D1380073AF30 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				55781B6929C6D14F0073AF30 /* DetailPageCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -230,9 +260,11 @@
 		55F01A5A29B0D83900B68872 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				55781B6229C6CC060073AF30 /* ActionHandler */,
 				55F01A5929B0D7F000B68872 /* Model */,
 				55F01A5829B0D7EE00B68872 /* View */,
 				55F01A5729B0D7EB00B68872 /* ViewModel */,
+				55781B6129C6C9C70073AF30 /* Coordinator */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -295,6 +327,7 @@
 		55F687FB29B7B3D90002271D /* DetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				55781B6829C6D1380073AF30 /* Coordinator */,
 				55F687FC29B7B3E50002271D /* View */,
 				55F687FD29B7B3FF0002271D /* ViewModel */,
 			);
@@ -434,6 +467,7 @@
 			files = (
 				55C1C73E29940F7800A8DD86 /* UIView + Extension.swift in Sources */,
 				5553D3C2299EA72D00468EC4 /* Coordinator.swift in Sources */,
+				55781B6029C6C9BA0073AF30 /* HomePageCoordinator.swift in Sources */,
 				5594AE2F29A5374F00475B9D /* Player.swift in Sources */,
 				5553D3C4299F2C3B00468EC4 /* HomepageViewController+Constraints.swift in Sources */,
 				55DE695C29A75C9D009521EF /* HomePageViewController+PickerViewDataSource.swift in Sources */,
@@ -441,7 +475,9 @@
 				55DE696629A75EBF009521EF /* PlayerDetailViews.swift in Sources */,
 				55F687D429B46EC40002271D /* HomePageViewController + ViewModel.swift in Sources */,
 				55F3040F29864C9600CECF18 /* PlayerInformationTableViewCell.swift in Sources */,
+				55781B6A29C6D14F0073AF30 /* DetailPageCoordinator.swift in Sources */,
 				556C681229BC62DD0074F21D /* PlayerDetailViewModel.swift in Sources */,
+				55781B6429C6CC200073AF30 /* HomePageActionHandler.swift in Sources */,
 				55DE696429A75DAD009521EF /* HomePageViewController+TeamManagerDelegate.swift in Sources */,
 				55F01A5E29B0EB3800B68872 /* Constant.swift in Sources */,
 				55F303EB298643A400CECF18 /* AppDelegate.swift in Sources */,

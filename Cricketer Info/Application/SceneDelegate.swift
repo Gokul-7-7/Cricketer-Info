@@ -3,15 +3,17 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var mainCoordinator: MainCoordinator?
+    private var appCoordinator: AppCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let navigationController = UINavigationController()
-        mainCoordinator = MainCoordinator(navigationController: navigationController)
-        mainCoordinator?.showHomePage()
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
+        appCoordinator = AppCoordinatorImpl(navigationController: navigationController)
+        appCoordinator?.start()
         window?.makeKeyAndVisible()
     }
 /// Understand each method here

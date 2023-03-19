@@ -10,8 +10,9 @@ extension HomePageViewController: UITableViewDelegate {
         guard let teamResponse = viewModel.teamResponse, let selectedTeamId = selectedTeamId else {
             return
         }
-        let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
-        let coordinator = MainCoordinator(navigationController: navigationController ?? UINavigationController())
-        coordinator.showPlayerDetail(playerData: playerData)
+        viewModel.didSelectItem(selectedTeamId: selectedTeamId, at: indexPath)
+//        let playerData = teamResponse.teams[selectedTeamId].players[indexPath.row]
+//        let coordinator = MainCoordinator(navigationController: navigationController ?? UINavigationController())
+//        coordinator.showPlayerDetail(playerData: playerData)
     }
 }

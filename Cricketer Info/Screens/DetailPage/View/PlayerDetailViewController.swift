@@ -4,19 +4,37 @@ class PlayerDetailViewController: UIViewController {
     
     let playerViews = PlayerDetailViews()
     private var playerData: Player?
-    let viewModel = PlayerDetailViewModel()
+    let viewModel: PlayerDetailViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        setupViewModel()
         setupConstraints()
         setupNavigationBar()
         setupViewWithData()
         setupNavigationBar()
     }
     
-    func configure(with viewModel: PlayerDetailViewModel) {
-        self.playerData = viewModel.playerData
+    init(viewModel: PlayerDetailViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupViewModel() {
+        viewModel?.onUpdate = { [weak self] state in
+            self?.update(state: state)
+        }
+    }
+    func update(state: PlayerDetailState) {
+        switch state {
+        case .loaded(let player):
+            self.playerData = player
+        }
     }
     
     func setupViewWithData() {

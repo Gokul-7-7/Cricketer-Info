@@ -1,18 +1,31 @@
-//
-//  PlayerDetailViewModel.swift
-//  Cricketer Info
-//
-//  Created by Gokul on 11/03/23.
-//
-
 import Foundation
 
-class PlayerDetailViewModel {
-    var playerData: Player?
+enum PlayerDetailState {
+    case loaded(Player)
+}
+
+protocol PlayerDetailViewModelProtocol: AnyObject {
+    typealias State = (PlayerDetailState) -> Void
+    var onUpdate: State? { get set }
     
-    init(playerData: Player? = nil) {
+    func viewDidLoad()
+}
+
+class PlayerDetailViewModel: PlayerDetailViewModelProtocol {
+    var playerData: Player
+    var onUpdate: State?
+    
+    init(playerData: Player) {
         self.playerData = playerData
     }
     
-    
+    func viewDidLoad() {
+        loadData()
+    }
+}
+
+extension PlayerDetailViewModel {
+    func loadData() {
+        onUpdate?(.loaded(playerData))
+    }
 }

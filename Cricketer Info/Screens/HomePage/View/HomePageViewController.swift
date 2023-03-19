@@ -9,10 +9,17 @@ class HomePageViewController: UIViewController {
     var selectedTeam: String?
     let cellId = "cellID"
     var selectedTeamId: Int?
+    var viewModel: HomePageViewModel
     
-    var viewModel = HomePageViewModel()
+    init(viewModel: HomePageViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
     
-    //private let teamDataManager = TeamDataManager()
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     var teamResponse: TeamResponse?
     
     override func viewDidLoad() {

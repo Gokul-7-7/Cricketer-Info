@@ -1,22 +1,18 @@
 import UIKit
+protocol AppCoordinator: AnyObject {
+    func start()
+}
 
-class MainCoordinator: Coordinator {
+final class AppCoordinatorImpl: AppCoordinator {
     
-    var navigationController: UINavigationController
+    private var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func showHomePage() {
-        let homepageVC = HomePageViewController()
-        navigationController.pushViewController(homepageVC, animated: false)
+    func start() {
+        let homePageViewController = HomePageCoordinatorImplementation(navigationController: navigationController)
+        homePageViewController.start()
     }
-    
-    func showPlayerDetail(playerData: Player) {
-        let detailVC = PlayerDetailViewController()
-        detailVC.configure(with: PlayerDetailViewModel(playerData: playerData))
-        navigationController.pushViewController(detailVC, animated: true)
-    }
-    //other navigations
 }
